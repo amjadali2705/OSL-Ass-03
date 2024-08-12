@@ -1,0 +1,10 @@
+.card {
+  height: 275px;
+  width: 310px;
+  background-color: #ffffff;
+  padding: 4% 0 0 2%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}/*# sourceMappingURL=mycard.css.map */

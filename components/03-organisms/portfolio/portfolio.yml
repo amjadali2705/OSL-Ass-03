@@ -1,0 +1,94 @@
+heading_level: 2
+heading: Portfolio
+p_content: Necessitatibus eius consequatur
+
+data_filter_all: "*"
+data_filter_app: ".filter-app"
+data_filter_product: ".filter-product"
+data_filter_branding: ".filter-branding"
+data_filter_all_text: All
+data_filter_app_text: App
+data_filter_product_text: Card
+data_filter_branding_text: Web
+
+portfoliodata:
+- img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
+  h4content: App 1
+  pcontent: Lorem ipsum, dolor sit
+  ahref: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
+  atitle: "App 1"
+  filtername: filter-app
+  left: 0
+  top: 0
+
+- img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+  h4content: Product 1
+  pcontent: Lorem ipsum, dolor sit
+  ahref: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+  atitle: "Product 1"
+  filtername: filter-product
+  left: 440
+  top: 0
+
+- img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+  h4content: Branding 1
+  pcontent: Lorem ipsum, dolor sit
+  ahref: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+  atitle: "Branding 1"
+  filtername: filter-branding
+  left: 880
+  top: 0
+
+- img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
+  h4content: App 2
+  pcontent: Lorem ipsum, dolor sit
+  ahref: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
+  atitle: "App 2"
+  filtername: filter-app
+  left: 880
+  top: 258
+
+- img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
+  h4content: Product 2
+  pcontent: Lorem ipsum, dolor sit
+  ahref: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
+  atitle: "Product 2"
+  filtername: filter-product
+  left: 440
+  top: 302.922
+
+- img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
+  h4content: Branding 2
+  pcontent: Lorem ipsum, dolor sit
+  ahref: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
+  atitle: "Branding 2"
+  filtername: filter-branding
+  left: 0
+  top: 445.703
+
+- img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
+  h4content: App 3
+  pcontent: Lorem ipsum, dolor sit
+  ahref: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
+  atitle: "App 3"
+  filtername: filter-app
+  left: 880
+  top: 557.078
+
+- img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
+  h4content: Product 3
+  pcontent: Lorem ipsum, dolor sit
+  ahref: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
+  atitle: "Product 3"
+  filtername: filter-product
+  left: 880
+  top: 851.109
+
+- img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+  h4content: Branding 3
+  pcontent: Lorem ipsum, dolor sit
+  ahref: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+  atitle: "Branding 3"
+  filtername: filter-branding
+  left: 440
+  top: 948.766

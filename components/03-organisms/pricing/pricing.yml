@@ -1,0 +1,57 @@
+pricingdata:
+- isfeatured: false
+  showadvanced: false
+  heading_level: 3
+  heading: Free
+  h4content: 0
+  isna1: false
+  isna2: false
+  isna3: false
+  isna4: true
+  isna5: true
+  btncontent: Buy Now
+  a_href: "#"
+  btn__modifier_classes: "btn-buy"
+
+- isfeatured: true
+  showadvanced: false
+  heading_level: 3
+  heading: Business
+  h4content: 19
+  isna1: false
+  isna2: false
+  isna3: false
+  isna4: false
+  isna5: true
+  btncontent: Buy Now
+  a_href: "#"
+  btn__modifier_classes: "btn-buy"
+
+- isfeatured: false
+  showadvanced: false
+  heading_level: 3
+  heading: Developer
+  h4content: 29
+  isna1: false
+  isna2: false
+  isna3: false
+  isna4: false
+  isna5: false
+  btncontent: Buy Now
+  a_href: "#"
+  btn__modifier_classes: "btn-buy"
+
+- isfeatured: false
+  showadvanced: true
+  heading_level: 3
+  heading: Ultimate
+  h4content: 49
+  isna1: false
+  isna2: false
+  isna3: false
+  isna4: false
+  isna5: false
+  btncontent: Buy Now
+  a_href: "#"
+  btn__modifier_classes: "btn-buy"
+

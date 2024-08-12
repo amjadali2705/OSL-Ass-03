@@ -1,0 +1,25 @@
+<section id="testimonials" class="testimonials section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+            {% for data in testimonialsdata %}
+
+                {% include "@molecules/testimonialitem/testimonialitem.twig" with {
+                    img_src: data.img_src,
+                    heading_level1: data.heading_level1,
+                    heading1: data.heading1,
+                    heading_level2: data.heading_level2,
+                    heading2: data.heading2,
+                    spancontent: data.spancontent
+                 } %}
+
+            {% endfor %}
+
+
+        </div>
+
+      </div>
+
+    </section>

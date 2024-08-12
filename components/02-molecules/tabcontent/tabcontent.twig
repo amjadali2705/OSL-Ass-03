@@ -1,0 +1,14 @@
+<div class="tab-pane fade {% if isactiveshow %}active show{% endif %}" id="about-2-{{tabid}}" role="tabpanel">
+
+    <p class="fst-italic">{{pcontent}}</p>
+
+    {% for data in tabcontentdata %}
+
+        {% include "@atoms/tabitem/tabitem.twig" with {
+            h4text: data.h4text,
+            ptext: data.ptext
+        } %}
+
+    {% endfor %}
+
+</div>

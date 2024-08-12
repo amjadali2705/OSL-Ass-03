@@ -1,0 +1,34 @@
+{# <div>
+    <div>
+        {% include "@atoms/heading/heading.twig" with {
+            heading_level: heading_level1,
+            heading: heading1,
+            heading__modifier_classes: "head--heading3"
+        } %}
+    </div>
+</div> #}
+
+<div>
+    <div>
+        <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To LifeSure</h4>
+        <h1 class="display-1 text-white mb-4">Life Insurance Makes You Happy</h1>
+        {% include "@atoms/para/para.twig" with {
+            p_content: p_content,
+            p__additional_classes: p__additional_classes
+        } %}
+    </div>
+    <div class="d-flex gap-2">
+        <div>
+            {% include "@atoms/btn/btn.twig" with {
+                btn__modifier_classes: "btn--watchvideo",
+                btncontent: btncontent1
+            } %}
+        </div>
+        <div>
+            {% include "@atoms/btn/btn.twig" with {
+                btn__modifier_classes: "btn--learnmore",
+                btncontent: btncontent2
+            } %}
+        </div>
+    </div>
+</div>

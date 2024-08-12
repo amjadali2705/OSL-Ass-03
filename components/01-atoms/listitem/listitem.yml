@@ -1,0 +1,4 @@
+href_url: "#hero"
+li_content: "Home"
+li__additional_classes:
+  - "header-li"

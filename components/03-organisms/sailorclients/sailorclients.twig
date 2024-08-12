@@ -1,0 +1,18 @@
+<section id="clients" class="clients section light-background">
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="row gy-4">
+
+      {% for images in clientimages %} 
+        {% include "@molecules/clientimg/clientimg.twig" with {
+            clientimgsrc: images.clientimgsrc
+        } %}
+      {% endfor %}
+
+
+    </div>
+
+  </div>
+
+</section>

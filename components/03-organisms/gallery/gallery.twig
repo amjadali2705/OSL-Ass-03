@@ -1,0 +1,23 @@
+
+<section id="gallery" class="gallery section">
+    {% include "@molecules/sectiontitle/sectiontitle.twig" with {
+        section_title: section_title
+    } %}
+
+
+
+<div class="container mt-5">
+  {# <h1 class="text-center mb-5">{{ title }}</h1> #}
+  <div class="img-gallery">
+    {% for image in images %}
+      <a href="{{ image.href }}" data-fancybox="img-gallery" data-caption="{{ image.caption }}">
+        <img src="{{ image.src }}" alt="{{ image.alt }}">
+      </a>
+    {% endfor %}
+  </div>
+</div>
+</section>
+
+
+
+

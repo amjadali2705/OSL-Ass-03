@@ -1,0 +1,9 @@
+btncontent: "Get started"
+a_href: "#"
+modifier_class:
+  # - "btn--getstarted"
+  # - "btn--watchvideo"
+  # - "btn--learnmore"
+  # - "btn--buytickets"
+  - "btn--get--started"
+  - "btn-buy"

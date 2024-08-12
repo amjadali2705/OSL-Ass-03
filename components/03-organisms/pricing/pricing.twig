@@ -1,0 +1,31 @@
+<section id="pricing" class="pricing section">
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+            {% for data in pricingdata %}
+
+                {% include "@molecules/pricingitem/pricingitem.twig" with {
+                    isfeatured: data.isfeatured,
+                    showadvanced: data.showadvanced,
+                    heading_level: data.heading_level,
+                    heading: data.heading,
+                    h4content: data.h4content,
+                    isna1: data.isna1,
+                    isna2: data.isna2,
+                    isna3: data.isna3,
+                    isna4: data.isna4,
+                    isna5: data.isna5,
+                    btncontent: data.btncontent,
+                    a_href: data.a_href,
+                    btn__modifier_classes: data.btn__modifier_classes
+                } %}
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>

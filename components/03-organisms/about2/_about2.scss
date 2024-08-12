@@ -1,0 +1,48 @@
+section, .section {
+    color: #444444;
+    background-color: #ffffff;
+    padding: 60px 0px;
+    scroll-margin-top: 90px;
+    overflow: clip;
+}
+
+.about-2 .about-img {
+    position: relative;
+    margin: 60px 0px 0px 60px;
+}
+
+.about-2 .about-img::before {
+    position: absolute;
+    inset: -60px 0px 0px -60px;
+    content: "";
+    background: url('https://bootstrapmade.com/demo/templates/Sailor/assets/img/about-bg.png') left top no-repeat;
+    z-index: 1;
+}
+
+.about-2 .about-img img {
+    position: relative;
+    z-index: 2;
+}
+
+.about-2 h3 {
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #556270;
+    font-family: "Raleway", sans-serif;
+}
+
+.about-2 .tab-content i {
+    font-size: 22px;
+    line-height: 0;
+    margin-right: 8px;
+    color: #d9232d;
+}
+
+.about-2 .tab-content h4 {
+    font-size: 18px;
+    margin: 0px;
+    font-weight: 700;
+    color: #444444;
+    font-size: "Raleway", sans-serif;
+}

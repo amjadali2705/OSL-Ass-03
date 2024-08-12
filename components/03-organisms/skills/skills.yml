@@ -1,0 +1,36 @@
+heading_level: 2
+heading: "Skills"
+p_content: "Check Our Skills"
+
+progressdata1:
+- spancontent: HTML
+  ival: 100%
+  valuenow: 100
+  width: 100%
+
+- spancontent: CSS
+  ival: 90%
+  valuenow: 90
+  width: 90%
+
+- spancontent: JavaScript
+  ival: 75%
+  valuenow: 75
+  width: 75%
+
+
+progressdata2:
+- spancontent: PHP
+  ival: 80%
+  valuenow: 80
+  width: 80%
+
+- spancontent: WordPress/CMS
+  ival: 90%
+  valuenow: 90
+  width: 90%
+
+- spancontent: Photoshop
+  ival: 55%
+  valuenow: 55
+  width: 75%

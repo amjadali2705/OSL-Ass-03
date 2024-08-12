@@ -1,0 +1,199 @@
+// .speakers {
+//     --default-color: #ffffff;
+// }
+
+// section, .section {
+//     color: var(--default-color);
+//     background-color: #ffffff;
+//     padding: 60px 0;
+//     scroll-margin-top: 92px;
+//     overflow: clip;
+// }
+
+// // .section-title {
+// //     text-align: center;
+// //     padding-bottom: 60px;
+// //     position: relative;
+// // }
+
+// @media (min-width: 1200px) {
+//     .container, .container-lg, .container-md, .container-sm, .container-xl {
+//         max-width: 1140px;
+//     }
+// }
+
+// .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+//     --bs-gutter-x: 1.5rem;
+//     --bs-gutter-y: 0;
+//     width: 100%;
+//     padding-right: calc(var(--bs-gutter-x)* .5);
+//     padding-left: calc(var(--bs-gutter-x)* .5);
+//     margin-right: auto;
+//     margin-left: auto;
+// }
+
+// // .section-title h2 {
+// //     font-size: 32px;
+// //     font-weight: 700;
+// //     margin-bottom: 20px;
+// //     padding-bottom: 20px;
+// //     position: relative;
+// // }
+
+// // h1, h2, h3, h4, h5, h6 {
+// //     color: #0e1b4d;
+// //     font-family: "Raleway", sans-serif;
+// // }
+
+// // .section-title h2:after {
+// //     content: "";
+// //     position: absolute;
+// //     display: block;
+// //     width: 50px;
+// //     height: 3px;
+// //     background: #f82249;
+// //     left: 0;
+// //     right: 0;
+// //     bottom: 0;
+// //     margin: auto;
+// // }
+
+// @media (min-width: 1200px) {
+//     .container, .container-lg, .container-md, .container-sm, .container-xl {
+//         max-width: 1140px;
+//     }
+// }
+
+// .g-4, .gy-4 {
+//     --bs-gutter-y: 1.5rem;
+// }
+
+// .row {
+//     --bs-gutter-x: 1.5rem;
+//     // --bs-gutter-y: 0;
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-top: calc(-1* var(--bs-gutter-y));
+//     margin-right: calc(-.5* var(--bs-gutter-x));
+//     margin-left: calc(-.5* var(--bs-gutter-x));
+// }
+
+// @media (min-width: 1200px) {
+//     .col-xl-3 {
+//         flex: 0 0 auto;
+//         width: 25%;
+//     }
+// }
+
+// .row>* {
+//     // flex-shrink: 0;
+//     // width: 100%;
+//     max-width: 100%;
+//     padding-right: calc(var(--bs-gutter-x)* .5);
+//     padding-left: calc(var(--bs-gutter-x)* .5);
+//     margin-top: var(--bs-gutter-y);
+// }
+
+// .speakers .member {
+//     text-align: center;
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// // .img-fluid {
+// //     max-width: 100%;
+// //     height: auto;
+// // }
+
+// // img, svg {
+// //     vertical-align: middle;
+// // }
+
+// .speakers .member .member-info {
+//     position: absolute;
+//     padding: 15px 0;
+//     inset: auto 0 -44px 0;
+//     background: rgba(0, 0, 0, 0.6);
+//     transition: 0.4s;
+// }
+
+// .speakers .member .member-info-content h4 {
+//     color: #ffffff;
+//     font-weight: 700;
+//     margin-bottom: 4px;
+//     font-size: 16px;
+// }
+
+// h1, h2, h3, h4, h5, h6 {
+//     // color: var(--heading-color);
+//     font-family: "Raleway", sans-serif;
+// }
+
+// .speakers .member .member-info-content h4 a {
+//     color: #ffffff;
+// }
+
+// a {
+//     // color: var(--accent-color);
+//     text-decoration: none;
+//     transition: 0.3s;
+// }
+
+// .speakers .member .member-info-content span {
+//     font-style: italic;
+//     display: block;
+//     font-size: 13px;
+//     color: #ffffff
+// }
+
+// .speakers .member .social {
+//     text-align: center;
+//     padding-top: 10px;
+// }
+
+// .speakers .member .social a {
+//     transition: color 0.3s;
+//     color: color-mix(in srgb, #ffffff, transparent 30%);
+//     margin: 0 4px;
+//     display: inline-block;
+// }
+
+// a {
+//     // color: var(--accent-color);
+//     text-decoration: none;
+//     // transition: 0.3s;
+// }
+
+// .speakers .member .social i {
+//     font-size: 18px;
+//     margin: 0 2px;
+// }
+
+// .bi-twitter-x::before {
+//     content: "\f8db";
+// }
+
+// .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+//     display: inline-block;
+//     font-family: bootstrap-icons !important;
+//     font-style: normal;
+//     font-weight: normal !important;
+//     font-variant: normal;
+//     text-transform: none;
+//     line-height: 1;
+//     vertical-align: -.125em;
+//     -webkit-font-smoothing: antialiased;
+//     // -moz-osx-font-smoothing: grayscale;
+// }
+
+// .bi-facebook::before {
+//     content: "\f344";
+// }
+
+// .bi-instagram::before {
+//     content: "\f437";
+// }
+
+// .bi-linkedin::before {
+//     content: "\f472";
+// }

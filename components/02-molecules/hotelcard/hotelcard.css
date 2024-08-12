@@ -1,0 +1,54 @@
+.hotels .card {
+  background-color: #ffffff;
+  color: #2f3138;
+  border: 1px solid color-mix(in srgb, #2f3138, transparent 85%);
+  position: relative;
+  border-radius: 0;
+}
+
+.hotels .card .card-img {
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+.hotels .card .card-img img {
+  transition: 0.3s ease-in-out;
+}
+
+.hotels .card h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 0 20px;
+}
+
+.hotels .card a {
+  color: #0e1b4d;
+  transition: 0.3;
+}
+
+.hotels .card a:hover {
+  color: var(--accent-color);
+}
+
+.hotels .card .stars {
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+
+.hotels .card .stars i {
+  color: #ffc107;
+}
+
+.hotels .card p {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  color: color-mix(in srgb, #2f3138, transparent 40%);
+  font-style: italic;
+  font-size: 15px;
+}
+
+.hotels .card:hover .card-img img {
+  transform: scale(1.1);
+}/*# sourceMappingURL=hotelcard.css.map */

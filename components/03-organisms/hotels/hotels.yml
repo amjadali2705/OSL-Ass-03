@@ -1,0 +1,22 @@
+section_title: "Hotels"
+bgurl: "https://bootstrapmade.com/demo/templates/TheEvent/assets/img/hero-bg.jpg"
+btn__modifier_classes: "btn--getstarted"
+
+hotelcardsdata:
+- src: "	https://bootstrapmade.com/demo/templates/TheEvent/assets/img/hotels-1.jpg"
+  h3_content: "Non quibusdam blanditiis"
+  p_content: "0.4 Mile from the Venue"
+  btncontent: "Read More"
+  a_href: "https://www.google.com/"
+
+- src: "		https://bootstrapmade.com/demo/templates/TheEvent/assets/img/hotels-2.jpg"
+  h3_content: "Aspernatur assumenda"
+  p_content: "0.5 Mile from the Venue"
+  btncontent: "Learn More"
+  a_href: "https://www.youtube.com/"
+
+- src: "	https://bootstrapmade.com/demo/templates/TheEvent/assets/img/hotels-3.jpg"
+  h3_content: "Dolores ut ut voluptatibu"
+  p_content: "0.6 Mile from the Venue"
+  btncontent: "See More"
+  a_href: "https://twig.symfony.com/"

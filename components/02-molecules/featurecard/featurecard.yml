@@ -1,0 +1,11 @@
+p_content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic laborum odit pariatur..."
+h4_content: "Trusted Company"
+p__additional_classes:
+  - "hero-text-p"
+
+btncontent: "Learn More"
+a_href: "#"
+
+img_src: "https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png"
+img__additional_classes:
+  - "hero_image"

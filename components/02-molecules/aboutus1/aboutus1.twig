@@ -1,0 +1,17 @@
+<div class="col-lg-6 content aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            {# <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p> #}
+    
+    {% include "@atoms/para/para.twig" with {
+        p_content: p_content
+    } %}
+
+    <ul>
+        <li><i class="{{checkicon}}"></i> <span>{{spancontent1}}</span></li>
+        <li><i class="{{checkicon}}"></i> <span>{{spancontent2}}</span></li>
+        <li><i class="{{checkicon}}"></i> <span>{{spancontent3}}</span></li>
+    </ul>
+
+</div>

@@ -1,0 +1,34 @@
+<section id="contact" class="contact section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        {% include "@molecules/map/map.twig" %}
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+
+            {% for data in contacttypedata %}
+
+                {% include "@molecules/contacttype/contacttype.twig" with {
+                    icon: data.icon,
+                    heading_level: data.heading_level,
+                    heading: data.heading,
+                    p_content: data.p_content
+                } %}
+
+            {% endfor %}
+
+          </div>
+
+          <div class="col-lg-8">
+
+            {% include "@molecules/contactforms/contactforms.twig" %}
+            
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section>

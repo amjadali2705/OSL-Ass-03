@@ -1,0 +1,31 @@
+<section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        {% for data in bannerdata %}
+        <div class="carousel-item {% if loop.first %}active{% endif %}">
+                {% include "@molecules/carouselitem1/carouselitem1.twig" with {
+                    img_src: data.img_src, 
+                    heading_level: data.heading_level,
+                    heading: data.heading,
+                    p_content: data.p_content,
+                    btncontent: data.btncontent,
+                    a_href: data.a_href,
+                    btn__modifier_classes: data.btn__modifier_classes
+                }%}
+                </div>
+            {% endfor %}
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"><li data-bs-target="#hero-carousel" data-bs-slide-to="0" class=""></li><li data-bs-target="#hero-carousel" data-bs-slide-to="1" class=""></li><li data-bs-target="#hero-carousel" data-bs-slide-to="2" class="active" aria-current="true"></li></ol>
+
+      </div>
+
+    </section>

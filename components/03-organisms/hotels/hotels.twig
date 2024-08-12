@@ -1,0 +1,26 @@
+<section id="hotels" class="hotels section" style="background-image: url('{{bgurl}}'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+
+    {% include "@molecules/sectiontitle/sectiontitle.twig" with {
+        section_title: section_title
+    } %}
+
+    <div class="container wow animate__animated animate__fadeInUp">
+
+        <div class="row gy-4">
+
+            {% for data in hotelcardsdata %}
+                {% include "@molecules/hotelcard/hotelcard.twig" with {
+                    src: data.src, 
+                    h3_content: data.h3_content,
+                    p_content: data.p_content,
+                    btncontent: data.btncontent,
+                    a_href: data.a_href,
+                    btn__modifier_classes: btn__modifier_classes
+                }%}
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>

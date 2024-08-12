@@ -1,0 +1,29 @@
+{% set heading = content.field_feature_heading %}
+{% set subheading = content.field_feature_sub_heading %}
+{% set img_url = content.field_feature_img[0]["#markup"] %}
+{% set btn_title = content.field_feature_btn[0]["#title"] %}
+{% set btn_url = content.field_feature_btn[0]["#url"].uri %}
+
+
+
+<div class="col-md-6 col-lg-6 col-xl-3 wow animate__animated animate__bounce" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+    <div class="feature-item p-4 pt-0">
+        <div class="feature-icon p-4 mb-4">
+            <i class="far fa-handshake fa-3x"></i>
+        </div>
+        <h4 class="mb-4">{{heading}}</h4>
+        {% include "@atoms/para/para.twig" with {
+            p_content: subheading,
+        } %}
+        {% include "@atoms/btn/btn.twig" with {
+            btncontent: btn_title,
+            a_href: btn_url,
+            btn__modifier_classes: "btn--learnmore"
+        } %} 
+
+        {% include "@atoms/img/img.twig" with {
+            img_src: img_url,
+            img__additional_classes: "hero_image"
+        } %}
+    </div>
+</div>

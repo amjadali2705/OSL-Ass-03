@@ -1,0 +1,12 @@
+section, .section {
+    color: #2f3138;
+    background-color: #f2f2f3;
+    padding: 60px 0;
+    scroll-margin-top: 92px;
+    overflow: clip;
+}
+
+.light-background {
+    --background-color: #f2f2f3;
+    --surface-color: #ffffff;
+}

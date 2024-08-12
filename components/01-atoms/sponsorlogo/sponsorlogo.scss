@@ -1,0 +1,33 @@
+.client-logo {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid color-mix(in srgb, #2f3138, transparent 85%);
+    border-bottom: 1px solid color-mix(in srgb, #2f3138, transparent 85%);
+    overflow: hidden;
+
+    img {
+        padding: 50px;
+        max-width: 80%;
+        transition: 0.3s;
+        vertical-align: middle;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+.img-fluid {
+    // max-width: 100%;
+    height: auto;
+}
+
+.sponsors .client-logo:hover img {
+    transform: scale(1.1);
+  }
+  

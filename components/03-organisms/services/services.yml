@@ -1,0 +1,10 @@
+# services_container: 
+#   - "services_container"
+heading_content: "Lorem Ipsum"
+button__additional_classes:
+  - "sitename"
+p_text: "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
+p__additional_classes:
+  - "hero-text-p"
+card_container:
+  - "card"

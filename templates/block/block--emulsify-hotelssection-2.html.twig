@@ -1,0 +1,111 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - in_preview: Whether the plugin is being rendered in preview mode.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+
+
+{# <div{{ attributes }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div> #}
+
+{# <section id="hotels" class="hotels section">
+
+    {% include "@molecules/sectiontitle/sectiontitle.twig" with {
+        section_title: content.field_hotel_heading
+    } %}
+
+    <div class="container wow animate__animated animate__fadeInUp">
+
+        <div class="row gy-4">
+
+            {% for item in content["field_hotel_paragraph"]["#items"] %}
+            {% set paragraph = item.entity %}
+            {% set heading = paragraph.field_hotel_paragraph_heading.value %}
+            {% set subheading = paragraph.field_hotel_paragraph_subheading.value %}
+            {# {% set img_url = paragraph.field_hotel_paragraph_subheading.value %} #}
+                {# {% include "@molecules/hotelcard/hotelcard.twig" with {
+                    src: item.src, 
+                    h3_content: heading,
+                    p_content: subheading
+                }%}
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section> #} 
+
+{% block content %}
+  {% set hotel_cards = [] %}
+
+  {# {{dump(content.field_hotel_bg_image[0]["#markup"])}} #}
+
+  {% set serviceheading = content.field_hotel_heading %}
+  {% set bgimgurl = content.field_hotel_bg_image[0]["#markup"] %}
+
+  {% for value in content["field_hotel_paragraph"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set heading = paragraph.field_hotel_paragraph_heading.value %}
+    {% set subheading = paragraph.field_hotel_paragraph_subheading.value %}
+    {% set btntext = paragraph.field_hotel_paragraph_btn.title %}
+    {% set btnlink = paragraph.field_hotel_paragraph_btn.uri %}
+    {% set img = paragraph.field_hotel_paragraph_img.entity.uri.value %}
+    {% set imgsrc = file_url(img) %}
+    
+
+    {# {{dump(btnlink)}} #}
+
+
+    {% set hotel_cards = hotel_cards|merge([
+      {
+        'src': imgsrc,
+        'h3_content': heading,
+        'p_content': subheading,
+        'btncontent': btntext,
+        'a_href': btnlink
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/hotels/hotels.twig" with {
+    hotelcardsdata: hotel_cards,
+    section_title: serviceheading,
+    bgurl: bgimgurl
+  } %}
+{% endblock %}
+
+{# {{dump(content["field_hotel_paragraph"]["#items"].entity.field_hotel_paragraph_heading.value)}} #}
+{# {{dump(content["field_hotel_paragraph_img"]["#items"])}} #}

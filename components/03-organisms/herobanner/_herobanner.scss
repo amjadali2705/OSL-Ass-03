@@ -1,0 +1,39 @@
+.hero {
+    padding: 0;
+}
+
+section, .section {
+    color: #ffffff;
+    background-color: #3b4654;
+    // padding: 60px 0;
+    scroll-margin-top: 90px;
+    overflow: clip;
+}
+
+.hero .carousel {
+    width: 100%;
+    min-height: calc(100vh - 90px);
+    padding: 0;
+    margin: 0;
+    background-color: #3b4654;
+    position: relative;
+}
+
+.hero .carousel-control-prev, .hero .carousel-control-next {
+    width: 10%;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.hero .carousel-control-next-icon, .hero .carousel-control-prev-icon {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.hero .carousel-indicators {
+    list-style: none;
+}
+
+.hero .carousel-indicators li {
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+<div class="navitem_container "> 
+    {% for navitem in navitems %}
+        {% include "@atoms/navitem/navitem.twig" with {
+            nav_item: navitem.nav_item, 
+            nav_link: navitem.nav_link
+        }%}
+    {% endfor %}
+    {# {% include "@atoms/search/search.twig" %} #}
+    {% include "@atoms/btn/btn.twig" with {
+        btncontent: btncontent,
+        btn__modifier_classes: "btn--buytickets"
+    } %}
+</div> 
+

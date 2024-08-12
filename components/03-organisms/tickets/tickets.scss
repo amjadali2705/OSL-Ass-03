@@ -1,0 +1,135 @@
+// section, .section {
+//     color: #2f3138;
+//     background-color: #f2f2f3;
+//     padding: 60px 0;
+//     scroll-margin-top: 92px;
+//     overflow: clip;
+// }
+
+// @media (min-width: 1200px) {
+//     .container, .container-lg, .container-md, .container-sm, .container-xl {
+//         max-width: 1140px;
+//     }
+// }
+
+// .buy-tickets .pricing-item {
+//     background-color: #ffffff;
+//     box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+//     padding-bottom: 30px;
+//     position: relative;
+//   }
+  
+//   .buy-tickets .pricing-item h3 {
+//     font-weight: 700;
+//     margin-bottom: 0;
+//     font-size: 24px;
+//   }
+
+//   h1, h2, h3, h4, h5, h6 {
+//     color: #0e1b4d;
+//     font-family: "Raleway", sans-serif;
+// }
+  
+//   .buy-tickets .pricing-item h4 {
+//     font-size: 48px;
+//     color: #f82249;
+//     font-weight: 400;
+//     font-family: "Raleway", sans-serif;
+//     margin-bottom: 25px;
+//     text-align: center;
+//   }
+  
+//   .buy-tickets .pricing-item h4 sup {
+//     font-size: 28px;
+//   }
+  
+//   .buy-tickets .pricing-item h4 span {
+//     color: color-mix(in srgb, #2f3138, transparent 60%);
+//     font-size: 18px;
+//   }
+  
+//   .buy-tickets .pricing-item ul {
+//     padding: 20px 0;
+//     list-style: none;
+//     color: color-mix(in srgb, #2f3138, transparent 40%);
+//     text-align: left;
+//     line-height: 20px;
+//   }
+
+//   dl, ol, ul {
+//     margin-top: 0;
+//     margin-bottom: 1rem;
+// }
+  
+//   .buy-tickets .pricing-item ul li {
+//     padding-top: 15px;
+//     display: flex;
+//     align-items: center;
+//   }
+  
+//   .buy-tickets .pricing-item ul i {
+//     color: #059652;
+//     font-size: 24px;
+//     padding-right: 3px;
+//   }
+  
+//   .buy-tickets .pricing-item ul .na {
+//     color: color-mix(in srgb, #2f3138, transparent 60%);
+//   }
+  
+//   .buy-tickets .pricing-item ul .na i {
+//     color: color-mix(in srgb, #2f3138, transparent 60%);
+//   }
+  
+//   .buy-tickets .pricing-item ul i {
+//     // color: #059652;
+//     font-size: 24px;
+//     padding-right: 3px;
+// }
+
+//   .buy-tickets .pricing-item ul .na span {
+//     text-decoration: line-through;
+//   }
+  
+//   .buy-tickets .buy-btn {
+//     color: #ffffff;
+//     background-color: #f82249;
+//     border: 2px solid #f82249;
+//     display: inline-block;
+//     padding: 12px 40px;
+//     border-radius: 4px;
+//     // transition: none;
+//     font-size: 16px;
+//     font-weight: 500;
+//     transition: 0.3s;
+//     font-family: "Raleway", sans-serif;
+//   }
+  
+//   .buy-tickets .buy-btn:hover {
+//     background: color-mix(in srgb, #f82249, transparent 20%);
+//   }
+  
+//   .buy-tickets .featured {
+//     background: var(--accent-color);
+//   }
+  
+//   .buy-tickets .featured h3,
+//   .buy-tickets .featured h4,
+//   .buy-tickets .featured h4 span,
+//   .buy-tickets .featured ul,
+//   .buy-tickets .featured ul .na,
+//   .buy-tickets .featured ul i,
+//   .buy-tickets .featured ul .na i {
+//     color: var(--contrast-color);
+//   }
+  
+//   .buy-tickets .featured .buy-btn {
+//     background: var(--accent-color);
+//     color: var(--contrast-color);
+//     border-color: var(--contrast-color);
+//   }
+  
+//   .buy-tickets .featured .buy-btn:hover {
+//     background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
+//     color: var(--contrast-color);
+//   }

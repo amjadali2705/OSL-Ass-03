@@ -1,0 +1,43 @@
+<section id="skills" class="skills section">
+
+      {% include "@molecules/sectionheading/sectionheading.twig" %}
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            {% for data in progressdata1 %}
+
+                {% include "@molecules/progressbars/progressbars.twig" with {
+                    spancontent: data.spancontent,
+                    ival: data.ival,
+                    valuenow: data.valuenow,
+                    width: data.width
+                } %}
+
+            {% endfor %}
+
+          </div>
+
+          <div class="col-lg-6">
+
+            {% for data in progressdata2 %}
+
+                {% include "@molecules/progressbars/progressbars.twig" with {
+                    spancontent: data.spancontent,
+                    ival: data.ival,
+                    valuenow: data.valuenow,
+                    width: data.width
+                } %}
+
+            {% endfor %}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>

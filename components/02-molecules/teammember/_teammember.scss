@@ -1,0 +1,94 @@
+.team-member {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 30px;
+    height: 100%;
+}
+
+.team-member .pic {
+    overflow: hidden;
+    width: 150px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.team-member .pic img {
+    transition: ease-in-out 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+  }
+
+.team-member .member-info {
+    padding-left: 30px;
+}
+
+.team-member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #556270;
+    font-family: "Raleway", sans-serif;
+}
+
+.team-member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.team-member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 85%);
+    bottom: 0;
+    left: 0;
+}
+
+.team-member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: color-mix(in srgb, #444444, transparent 40%)
+}
+
+.team-member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.team-member .social a {
+    background: color-mix(in srgb, #444444, transparent 94%);
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+}
+
+.team-member .social a i {
+    color: color-mix(in srgb, #444444, transparent 20%);
+    font-size: 16px;
+    margin: 0 2px;
+}
+
+.team-member .social a:hover {
+    background: #d9232d;
+  }
+
+  .team-member .social a:hover i {
+    color: #ffffff;
+  }

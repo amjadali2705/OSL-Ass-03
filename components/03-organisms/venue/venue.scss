@@ -1,0 +1,198 @@
+// section, .section {
+//     color: #2f3138;
+//     background-color: #ffffff;
+//     padding: 60px 0;
+//     scroll-margin-top: 92px;
+//     overflow: clip;
+
+//     &-title {
+//         text-align: center;
+//         padding-bottom: 60px;
+//         position: relative;
+
+//         p {
+//             margin-bottom: 0;
+//         }
+
+//         h2 {
+//             font-size: 32px;
+//             font-weight: 700;
+//             margin-bottom: 20px;
+//             padding-bottom: 20px;
+//             position: relative;
+
+//             &::after {
+//                 content: "";
+//                 position: absolute;
+//                 display: block;
+//                 width: 50px;
+//                 height: 3px;
+//                 background: #f82249;
+//                 left: 0;
+//                 right: 0;
+//                 bottom: 0;
+//                 margin: auto;
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 1200px) {
+//     .container, .container-lg, .container-md, .container-sm, .container-xl {
+//         max-width: 1140px;
+//     }
+// }
+
+// .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+//     --bs-gutter-x: 1.5rem;
+//     --bs-gutter-y: 0;
+//     width: 100%;
+//     padding-right: calc(var(--bs-gutter-x)* .5);
+//     padding-left: calc(var(--bs-gutter-x)* .5);
+//     margin-right: auto;
+//     margin-left: auto;
+// }
+
+// h1, h2, h3, h4, h5, h6 {
+//     color: #0e1b4d;
+//     font-family: "Raleway", sans-serif;
+// }
+
+// .venue .container-fluid {
+//     margin-bottom: 3px;
+// }
+
+// .venue {
+//     &-gallery {
+//         overflow: hidden;
+//         border-right: 3px solid #ffffff;
+//         border-bottom: 3px solid #ffffff;
+
+//         img {
+//             transition: all ease-in-out 0.4s;
+//             vertical-align: middle;
+//         }
+
+//         .img-fluid {
+//             max-width: 100%;
+//             height: auto;
+//         }
+
+//         a {
+//             color: #f82249;
+//             text-decoration: none;
+//             transition: 0.3s;
+//         }
+//     }
+
+//     &-gallery-container {
+//         padding-right: 1px;
+//     }
+
+//     &-info {
+//         background: url(https://bootstrapmade.com/demo/templates/TheEvent/assets/img/venue-info-bg.jpg) top center no-repeat;
+//         background-size: cover;
+//         position: relative;
+//         padding-top: 60px;
+//         padding-bottom: 60px;
+
+//         h3 {
+//             font-size: 36px;
+//             font-weight: 700;
+//             color: #ffffff;
+//             font-family: "Raleway", sans-serif;
+//         }
+
+//         p {
+//             color: #ffffff;
+//             margin-bottom: 0;
+//         }
+
+//         &::before {
+//             content: "";
+//             background: rgba(0, 0, 0, 0.5);
+//             position: absolute;
+//             bottom: 0;
+//             top: 0;
+//             left: 0;
+//             right: 0;
+//         }
+//     }
+
+//     .venue-map {
+//         iframe {
+//             width: 100%;
+//             height: 100%;
+//             min-height: 300px;
+//         }
+//     }
+// }
+
+// .g-0, .gx-0 {
+//     --bs-gutter-x: 0;
+// }
+
+// .g-0, .gy-0 {
+//     --bs-gutter-y: 0;
+// }
+
+// .row {
+//     --bs-gutter-x: 1.5rem;
+//     --bs-gutter-y: 0;
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-top: calc(-1* var(--bs-gutter-y));
+//     margin-right: calc(-.5* var(--bs-gutter-x));
+//     margin-left: calc(-.5* var(--bs-gutter-x));
+// }
+
+// @media (min-width: 992px) {
+
+//     .col-lg-8 {
+//         flex: 0 0 auto;
+//         width: 66.66666667%;
+//     }
+
+//     .col-lg-6 {
+//         flex: 0 0 auto;
+//         width: 50%;
+//     }
+
+//     .col-lg-3 {
+//         flex: 0 0 auto;
+//         width: 25%;
+//     }
+// }
+
+// .row>* {
+//     // flex-shrink: 0;
+//     // width: 100%;
+//     max-width: 100%;
+//     padding-right: calc(var(--bs-gutter-x)* .5);
+//     padding-left: calc(var(--bs-gutter-x)* .5);
+//     margin-top: var(--bs-gutter-y);
+// }
+
+// .venue .venue-info {
+//     background: url(https://bootstrapmade.com/demo/templates/TheEvent/assets/img/venue-info-bg.jpg) top center no-repeat;
+//     background-size: cover;
+//     position: relative;
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
+
+// .justify-content-center {
+//     justify-content: center !important;
+// }
+
+// .position-relative {
+//     position: relative !important;
+// }
+
+// @media (min-width: 992px) {
+    
+// }
+
+// .venue .venue-gallery:hover img {
+//     transform: scale(1.1);
+//   }

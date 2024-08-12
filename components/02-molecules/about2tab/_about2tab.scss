@@ -1,0 +1,22 @@
+.nav-pills {
+    border-bottom: 1px solid color-mix(in srgb, #444444, transparent 85%);
+}
+
+.nav-link.active {
+    color: #d9232d !important;
+    background: none !important;
+    border-bottom: 3px solid #d9232d !important;
+}
+
+.nav-link {
+    background: none !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: #444444 !important;
+    padding: 12px 0px !important;
+    margin-bottom: -2px !important;
+    border-radius: 0px !important;
+}
+.nav-pills li + li {
+    margin-left: 40px;
+}

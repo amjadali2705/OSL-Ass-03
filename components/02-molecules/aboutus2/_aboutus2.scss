@@ -1,0 +1,36 @@
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #444444;
+}
+
+.read-more {
+    background: #d9232d;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px 28px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .read-more:hover {
+    background: color-mix(in srgb, #d9232d, transparent 20%);
+  }
+  
+
+.read-more i {
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 0;
+    transition: 0.3s;
+}
+
+.read-more:hover i {
+    transform: translate(5px, 0);
+  }

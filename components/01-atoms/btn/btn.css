@@ -1,0 +1,36 @@
+.btnn {
+  color: white;
+}
+
+.btn--get--started {
+  color: #ffffff;
+  background: #d9232d;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin: 10px;
+  animation: fadeInUp 1s both 0.4s;
+}
+.btn--get--started:hover {
+  background: color-mix(in srgb, #d9232d, transparent 20%);
+}
+
+.btn-buy {
+  background: #d9232d;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-buy:hover {
+  background: color-mix(in srgb, #d9232d, transparent 20%);
+}/*# sourceMappingURL=btn.css.map */

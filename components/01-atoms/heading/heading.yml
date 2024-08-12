@@ -1,0 +1,5 @@
+- heading_level: 1
+  heading: This is an H1 Example
+
+# heading__modifier_classes: 
+#   - "head--heading3"

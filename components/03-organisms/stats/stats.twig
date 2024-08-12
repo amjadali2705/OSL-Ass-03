@@ -1,0 +1,20 @@
+<section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+
+          {% for data in statsdata %}
+            {% include "@molecules/statsitem/statsitem.twig" with {
+                p_content: data.p_content,
+                statsnum: data.statsnum,
+                end: data.end
+            } %}
+          {% endfor %}
+
+        </div>
+
+      </div>
+
+    </section>

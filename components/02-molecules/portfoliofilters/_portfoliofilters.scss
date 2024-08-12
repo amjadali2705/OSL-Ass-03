@@ -1,0 +1,33 @@
+.portfolio-filters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio-filters li:first-child {
+    margin-left: 0;
+}
+
+.portfolio-filters li:hover, .portfolio-filters li.filter-active {
+    color: #ffffff;
+    background-color: #d9232d;
+}
+
+.portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    font-family: "Raleway", sans-serif;
+}
+
+.portfolio-filters li:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,20 @@
+href1_link: "#hero"
+href1_content: "Home"
+
+href2_link: "#speakers"
+href2_content: "Speakers"
+
+href3_link: "#schedule"
+href3_content: "Schedule"
+
+href4_link: "#venue"
+href4_content: "Venue"
+
+href5_link: "#hotels"
+href5_content: "Hotels"
+
+href6_link: "#gallery"
+href6_content: "Gallery"
+
+href7_link: "#contact"
+href7_content: "Contact"

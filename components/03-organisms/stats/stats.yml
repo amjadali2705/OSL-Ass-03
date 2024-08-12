@@ -1,0 +1,16 @@
+statsdata:
+- p_content: Clients
+  statsnum: 232
+  end: 232
+
+- p_content: Projects
+  statsnum: 521
+  end: 521
+
+- p_content: Hours Of Support
+  statsnum: 1453
+  end: 1453
+
+- p_content: Workers
+  statsnum: 32
+  end: 32

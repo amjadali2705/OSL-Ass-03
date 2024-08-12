@@ -1,0 +1,9 @@
+# - heading_level1: 3
+#   heading1: "Welcome to Lifesure"
+
+p_content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+p__additional_classes:
+  - "hero-text-p"
+
+btncontent1: "Watch Video"
+btncontent2: "Learn More"

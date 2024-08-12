@@ -1,0 +1,117 @@
+/*
+ * General Variables
+ * Note: colors should go into
+ * components/00-base/01-colors/_color-vars.css
+ * and breakpoint related vars into
+ * components/00-base/base/_breakpoints.css
+*/
+/*
+ * Use this on the outer wrapper of page-level elements.
+ * It ensures consistent spacing between elements on the page.
+ */
+/**
+ * Breakpoint Configuration
+ * @see https://github.com/Team-Sass/breakpoint/wiki
+ *
+ */
+/*
+ * General Mixins (put specific ones in component files where applicable)
+*/
+/* Mixin - Clearfix.
+ * Adds clearfix based on http://bourbon.io/docs/#clearfix
+ * use example =   @include cleafix
+*/
+/*
+ * General Layout
+*/
+/*
+ * Layout Using Flexbox (IE11+).
+ * Remove this and uncomment Grid code below to use CSS Grid.
+*/
+.main {
+  max-width: xlarge;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 4em;
+}
+@media (min-width: 480px) {
+  .main {
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 1224px) {
+  .main {
+    padding-left: calc(1rem + -50vw + xlarge / 2);
+    padding-right: calc(1rem + -50vw + xlarge / 2);
+  }
+}
+@media (min-width: 920px) {
+  .main {
+    display: flex;
+  }
+}
+
+.main-sidebar {
+  margin-bottom: 2rem;
+}
+@media (min-width: 920px) {
+  .main-sidebar {
+    order: 2;
+    width: 33%;
+    margin-bottom: 0;
+  }
+}
+
+.main-content {
+  width: 100%;
+}
+@media (min-width: 920px) {
+  .main-content--with-sidebar {
+    margin-right: 1rem;
+    width: calc(100% - (33% + 1rem));
+  }
+}
+
+/*
+ * Layout Using CSS Grid (NO IE11 support)
+ * Remove Flexbox code above and uncomment this section to use CSS Grid.
+*/
+/* .main {
+  @include wrapper;
+
+  margin-bottom: 4em;
+
+  &--with-sidebar {
+    @include large {
+      display: grid;
+      grid-gap: $gutter;
+      grid-template-areas: "content sidebar";
+      grid-template-columns: $main-width 33%;
+    }
+  }
+}
+
+.main-sidebar {
+  grid-area: sidebar;
+  margin-bottom: $space-double;
+}
+
+.main-content {
+  grid-area: content;
+  width: 100%;
+} */
+.place-holder {
+  color: rgba( var(--c-neutral-n200, 145, 146, 146), 1 );
+  border: 4px dashed rgba( var(--c-neutral-n200, 145, 146, 146), 1 );
+  padding: 3.125rem;
+}
+.place-holder__content {
+  font-size: 3.2rem;
+  line-height: 1.4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}/*# sourceMappingURL=templates.css.map */

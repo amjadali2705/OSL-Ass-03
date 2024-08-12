@@ -1,0 +1,44 @@
+.service-item:hover {
+    border-color: #d9232d;
+}
+
+.service-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid color-mix(in srgb, #444444, transparent 85%);
+    transition: 0.3s;
+}
+
+.service-item .icon {
+    font-size: 36px;
+    line-height: 0;
+    margin-right: 30px;
+    color: #d9232d;
+}
+
+.service-item .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #556270;
+    font-family: "Raleway", sans-serif;
+}
+
+// h1, h2, h3, h4, h5, h6 {
+//     color: #556270;
+//     font-family: "Raleway", sans-serif;
+// }
+
+.service-item .title a {
+    color: #556270;
+}
+
+.service-item:hover .title a {
+    color: #d9232d;
+}
+
+@media (min-width: 1024px) {
+    h2, p {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+contacttypedata:
+- icon: bi bi-geo-alt
+  heading_level: 3
+  heading: Address
+  p_content: A108 Adam Street, New York, NY 535022
+
+- icon: bi bi-telephone
+  heading_level: 3
+  heading: Call Us
+  p_content: +1 5589 55488 55
+
+- icon: bi bi-envelope
+  heading_level: 3
+  heading: Email Us
+  p_content: info@example.com

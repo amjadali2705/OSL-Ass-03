@@ -1,0 +1,9 @@
+h1_content: "Better Solutions For Your Business"
+btncontent: "Get started"
+btn__additional_classes:
+  - "btn-getstarted"
+p_content: "We are team of talented designers making websites with Bootstrap"
+p__additional_classes:
+  - "hero-text-p"
+banner_class: 
+  - "banner_part"

@@ -1,0 +1,13 @@
+<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="{{serviceitemicon}} icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">{{h4text}}</a></h4>
+                {# <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> #}
+                {% include "@atoms/paragraph/paragraph.twig" with {
+                    paragraph: paragraph,
+                    modifier_class: para_modifier_class
+                } %}
+              </div>
+            </div>
+          </div>

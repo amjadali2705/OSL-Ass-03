@@ -1,0 +1,22 @@
+<section id="team" class="team section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+
+          {% for data in teamsdata %}
+            {% include "@molecules/teammember/teammember.twig" with {
+                img_src: data.img_src,
+                heading_level: data.heading_level,
+                heading: data.heading,
+                spancontent: data.spancontent,
+                p_content: data.p_content
+            } %}
+          {% endfor %}
+
+        </div>
+
+      </div>
+
+    </section>

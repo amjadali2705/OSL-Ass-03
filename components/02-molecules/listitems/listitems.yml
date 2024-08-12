@@ -1,0 +1,13 @@
+href_url: "#"
+li_content1: "Home"
+li_content2: "About"
+li_content3: "Services"
+li_content4: "Portfolio"
+li_content5: "Team"
+li_content6: "Pricing"
+li_content7: "Dropdown"
+li_content8: "Contact"
+li__additional_classes:
+  - "header-li"
+container_class: 
+  - "listitems-container"

@@ -1,0 +1,22 @@
+.content p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #444444;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.content ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #d9232d;
+}

@@ -1,0 +1,9 @@
+data_filter_all: "*"
+data_filter_app: ".filter-app"
+data_filter_product: ".filter-product"
+data_filter_branding: ".filter-branding"
+
+data_filter_all_text: All
+data_filter_app_text: App
+data_filter_product_text: Card
+data_filter_branding_text: Web

@@ -1,0 +1,22 @@
+
+          {# <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt=""> #}
+    {% include "@atoms/img/img.twig" with {
+        img_src: img_src
+    } %}
+    <div class="carousel-container">
+        {# <h2>Temporibus autem quibusdam</h2> #}
+        {% include "@atoms/heading/heading.twig" with {
+            heading_level: heading_level,
+            heading: heading
+        } %}
+        {# <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p> #}
+        {% include "@atoms/para/para.twig" with {
+                p_content: p_content
+        } %}
+        {# <a href="#featured-services" class="btn-get-started">Get Started</a> #}
+        {% include "@atoms/btn/btn.twig" with {
+            btncontent: btncontent,
+            a_href: a_href,
+            modifier_class: btn__modifier_classes
+        } %}
+    </div>

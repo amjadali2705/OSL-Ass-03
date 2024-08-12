@@ -1,0 +1,41 @@
+<section id="speakers" class="speakers section">
+
+      {% include "@molecules/sectiontitle/sectiontitle.twig" with {
+        section_title: section_title
+      } %}
+
+    <div class="container">
+
+      <div class="row gy-4">
+  
+
+          {% include "@molecules/speaker/speaker.twig" with {
+            img_src: img_src1,
+            speaker_h4: speaker_h4_1,
+            speakers_span: speakers_span_1
+          } %}
+
+          {% include "@molecules/speaker/speaker.twig" with {
+            img_src: img_src2,
+            speaker_h4: speaker_h4_2,
+            speakers_span: speakers_span_2
+          } %}
+
+          {% include "@molecules/speaker/speaker.twig" with {
+            img_src: img_src3,
+            speaker_h4: speaker_h4_3,
+            speakers_span: speakers_span_3
+          } %}
+
+          {% include "@molecules/speaker/speaker.twig" with {
+            img_src: img_src4,
+            speaker_h4: speaker_h4_4,
+            speakers_span: speakers_span_4
+          } %}
+
+        
+      </div>
+
+      </div>
+
+    </section>

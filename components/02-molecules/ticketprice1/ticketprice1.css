@@ -1,0 +1,64 @@
+.pricing-item h3 {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 24px;
+  color: #0e1b4d;
+  font-family: "Raleway", sans-serif;
+}
+.pricing-item h4 {
+  font-size: 48px;
+  color: #f82249;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.pricing-item h4 sup {
+  font-size: 28px;
+}
+.pricing-item h4 span {
+  color: color-mix(in srgb, #2f3138, transparent 60%);
+  font-size: 18px;
+}
+.pricing-item ul {
+  padding: 20px 0;
+  list-style: none;
+  color: color-mix(in srgb, #2f3138, transparent 40%);
+  text-align: left;
+  line-height: 20px;
+}
+.pricing-item ul li {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.pricing-item ul i {
+  color: #059652;
+  font-size: 24px;
+  padding-right: 3px;
+}
+.pricing-item ul .na {
+  color: color-mix(in srgb, #2f3138, transparent 60%);
+}
+.pricing-item ul .na i {
+  color: color-mix(in srgb, #2f3138, transparent 60%);
+}
+.pricing-item ul .na span {
+  text-decoration: line-through;
+}
+
+.buy-btn {
+  color: #ffffff;
+  background-color: #f82249;
+  border: 2px solid #f82249;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+  font-family: "Raleway", sans-serif;
+}
+.buy-btn:hover {
+  background: color-mix(in srgb, #f82249, transparent 20%);
+}/*# sourceMappingURL=ticketprice1.css.map */

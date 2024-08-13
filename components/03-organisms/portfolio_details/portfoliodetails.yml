@@ -1,0 +1,25 @@
+imgsrc1: 	https://bootstrapmade.com/demo/templates/Sailor/assets/img/portfolio/app-1.jpg
+imgsrc2: 		https://bootstrapmade.com/demo/templates/Sailor/assets/img/portfolio/product-1.jpg
+imgsrc3: https://bootstrapmade.com/demo/templates/Sailor/assets/img/portfolio/branding-1.jpg
+imgsrc4: 	https://bootstrapmade.com/demo/templates/Sailor/assets/img/portfolio/books-1.jpg
+
+heading_level: 3
+heading: Project information
+
+projectinformationdata: 
+- strongcontent: Category
+  licontent: web design
+
+- strongcontent: Client
+  licontent: ASU Company
+
+- strongcontent: Project date
+  licontent: 01 March, 2020
+
+- strongcontent: Project URL
+  licontent: www.example.com
+
+heading_level2: 2
+heading2: Exercitationem repudiandae officiis neque suscipit
+
+p_content: Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.

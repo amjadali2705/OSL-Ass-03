@@ -20,6 +20,7 @@ portfoliodata:
   filtername: filter-app
   left: 0
   top: 0
+  fancyboxdata: app
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
   h4content: Product 1
@@ -29,6 +30,7 @@ portfoliodata:
   filtername: filter-product
   left: 440
   top: 0
+  fancyboxdata: product
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
   h4content: Branding 1
@@ -38,6 +40,7 @@ portfoliodata:
   filtername: filter-branding
   left: 880
   top: 0
+  fancyboxdata: branding
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
   h4content: App 2
@@ -47,6 +50,7 @@ portfoliodata:
   filtername: filter-app
   left: 880
   top: 258
+  fancyboxdata: app
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
   h4content: Product 2
@@ -56,6 +60,7 @@ portfoliodata:
   filtername: filter-product
   left: 440
   top: 302.922
+  fancyboxdata: product
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
   h4content: Branding 2
@@ -65,6 +70,7 @@ portfoliodata:
   filtername: filter-branding
   left: 0
   top: 445.703
+  fancyboxdata: branding
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
   h4content: App 3
@@ -74,6 +80,7 @@ portfoliodata:
   filtername: filter-app
   left: 880
   top: 557.078
+  fancyboxdata: app
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
   h4content: Product 3
@@ -83,6 +90,7 @@ portfoliodata:
   filtername: filter-product
   left: 880
   top: 851.109
+  fancyboxdata: product
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
   h4content: Branding 3
@@ -92,3 +100,4 @@ portfoliodata:
   filtername: filter-branding
   left: 440
   top: 948.766
+  fancyboxdata: branding

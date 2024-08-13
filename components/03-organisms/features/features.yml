@@ -1,0 +1,71 @@
+heading_level: 2
+heading: "Features"
+p_content: "Check Our Features"
+
+tablistitemdata:
+- isactive: true
+  lihref: tab-1
+  areaselected: true
+  licontent: Modi sit est
+
+- isactive: false
+  lihref: tab-2
+  areaselected: false
+  licontent: Unde praesentium sed
+
+- isactive: false
+  lihref: tab-3
+  areaselected: false
+  licontent: Pariatur explicabo vel
+
+- isactive: false
+  lihref: tab-4
+  areaselected: false
+  licontent: Nostrum qui quasi
+
+- isactive: false
+  lihref: tab-5
+  areaselected: false
+  licontent: Iusto ut expedita aut
+
+featuretabsdata:
+- isactive: true
+  tabid: tab-1
+  heading_level: 3
+  heading: Architecto ut aperiam autem id
+  ptext: Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka
+  p_content: Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+  img_src: https://bootstrapmade.com/demo/templates/Sailor/assets/img/tabs/tab-1.png
+
+- isactive: false
+  tabid: tab-2
+  heading_level: 3
+  heading: Et blanditiis nemo veritatis excepturi
+  ptext: Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka
+  p_content: Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal
+  img_src: https://bootstrapmade.com/demo/templates/Sailor/assets/img/tabs/tab-2.png
+
+- isactive: false
+  tabid: tab-3
+  heading_level: 3
+  heading: Impedit facilis occaecati odio neque aperiam sit
+  ptext: Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut
+  p_content: Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae
+  img_src: https://bootstrapmade.com/demo/templates/Sailor/assets/img/tabs/tab-3.png
+
+- isactive: false
+  tabid: tab-4
+  heading_level: 3
+  heading: Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore
+  ptext: Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus
+  p_content: Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore
+  img_src: https://bootstrapmade.com/demo/templates/Sailor/assets/img/tabs/tab-4.png
+
+- isactive: false
+  tabid: tab-5
+  heading_level: 3
+  heading: Est eveniet ipsam sindera pad rone matrelat sando reda
+  ptext: Omnis blanditiis saepe eos autem qui sunt debitis porro quia.
+  p_content: Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel
+  img_src: https://bootstrapmade.com/demo/templates/Sailor/assets/img/tabs/tab-5.png
+

@@ -1,0 +1,14 @@
+<ul class="nav nav-tabs flex-column" role="tablist">
+
+  {% for data in tablistitemdata %}
+
+    {% include "@atoms/tablistitem/tablistitem.twig" with {
+      isactive: data.isactive,
+      lihref: data.lihref,
+      areaselected: data.areaselected,
+      licontent: data.licontent
+    } %}
+
+  {% endfor %}
+              
+</ul>

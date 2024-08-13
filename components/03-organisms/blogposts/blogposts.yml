@@ -1,0 +1,152 @@
+blogpostsdata:
+- img_src: 	https://bootstrapmade.com/demo/templates/Sailor/assets/img/blog/blog-1.jpg
+  h2content: Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia
+  icon1: bi bi-person
+  ahref1: blog-details.html
+  litext1: John Doe
+  icon2: bi bi-clock
+  ahref2: blog-details.html
+  litext2: Jan 1, 2022
+  icon3: bi bi-chat-dots
+  ahref3: blog-details.html
+  litext3: 12 Comments
+  p_content: Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                          Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+  btnhref: blog-details.html
+  btncontent: Read More
+
+- img_src: 	https://bootstrapmade.com/demo/templates/Sailor/assets/img/blog/blog-2.jpg
+  h2content: Nisi magni odit consequatur autem nulla dolorem
+  icon1: bi bi-person
+  ahref1: blog-details.html
+  litext1: John Doe
+  icon2: bi bi-clock
+  ahref2: blog-details.html
+  litext2: Jan 1, 2022
+  icon3: bi bi-chat-dots
+  ahref3: blog-details.html
+  litext3: 12 Comments
+  p_content: Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo libero rerum voluptatem pariatur nam.
+                        Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae. Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias odio quos distinctio.
+  btnhref: blog-details.html
+  btncontent: Read More
+
+- img_src: 	https://bootstrapmade.com/demo/templates/Sailor/assets/img/blog/blog-3.jpg
+  h2content: Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.
+  icon1: bi bi-person
+  ahref1: blog-details.html
+  litext1: John Doe
+  icon2: bi bi-clock
+  ahref2: blog-details.html
+  litext2: Jan 1, 2022
+  icon3: bi bi-chat-dots
+  ahref3: blog-details.html
+  litext3: 12 Comments
+  p_content: Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et. Eum temporibus fugiat voluptate enim tenetur sunt omnis.
+                        Doloremque est saepe laborum aut. Ipsa cupiditate ex harum at recusandae nesciunt. Ut dolores velit.
+  btnhref: blog-details.html
+  btncontent: Read More
+
+- img_src: 	https://bootstrapmade.com/demo/templates/Sailor/assets/img/blog/blog-4.jpg
+  h2content: Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.
+  icon1: bi bi-person
+  ahref1: blog-details.html
+  litext1: John Doe
+  icon2: bi bi-clock
+  ahref2: blog-details.html
+  litext2: Jan 1, 2022
+  icon3: bi bi-chat-dots
+  ahref3: blog-details.html
+  litext3: 12 Comments
+  p_content: Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
+                        Quia sed sunt. Ea asperiores expedita et et delectus voluptates rerum. Id saepe ut itaque quod qui voluptas nobis porro rerum. Quam quia nesciunt qui aut est non omnis. Inventore occaecati et quaerat magni itaque nam voluptas. Voluptatem ducimus sint id earum ut nesciunt sed corrupti nemo.
+  btnhref: blog-details.html
+  btncontent: Read More
+
+
+categorieslistitemdata:
+- ahref: #
+  licontent: General
+  spancontent: (25)
+
+- ahref: #
+  licontent: Lifestyle
+  spancontent: (12)
+
+- ahref: #
+  licontent: Travel
+  spancontent: (5)
+
+- ahref: #
+  licontent: Design
+  spancontent: (22)
+
+- ahref: #
+  licontent: Creative
+  spancontent: (8)
+
+- ahref: #
+  licontent: Educaion
+  spancontent: (14)
+
+
+recentpostitemdata:
+- imgsrc: https://bootstrapmade.com/demo/templates/Sailor/assets/img/blog/blog-recent-1.jpg
+  ahref: blog-details.html
+  h4content: Nihil blanditiis at in nihil autem
+  date: Jan 1, 2020
+
+- imgsrc: https://bootstrapmade.com/demo/templates/Sailor/assets/img/blog/blog-recent-2.jpg
+  ahref: blog-details.html
+  h4content: Quidem autem et impedit
+  date: Jan 1, 2020
+
+- imgsrc: https://bootstrapmade.com/demo/templates/Sailor/assets/img/blog/blog-recent-3.jpg
+  ahref: blog-details.html
+  h4content: Id quia et et ut maxime similique occaecati ut
+  date: Jan 1, 2020
+
+- imgsrc: https://bootstrapmade.com/demo/templates/Sailor/assets/img/blog/blog-recent-4.jpg
+  ahref: blog-details.html
+  h4content: Laborum corporis quo dara net para
+  date: Jan 1, 2020
+
+- imgsrc: https://bootstrapmade.com/demo/templates/Sailor/assets/img/blog/blog-recent-5.jpg
+  ahref: blog-details.html
+  h4content: Et dolores corrupti quae illo quod dolor
+  date: Jan 1, 2020
+
+
+tagsdata: 
+- ahref: #
+  litext: App
+
+- ahref: #
+  litext: IT
+
+- ahref: #
+  litext: Buisiness
+
+- ahref: #
+  litext: Mac
+
+- ahref: #
+  litext: Design
+
+- ahref: #
+  litext: Office
+
+- ahref: #
+  litext: Creative
+
+- ahref: #
+  litext: Studio
+
+- ahref: #
+  litext: Smart
+
+- ahref: #
+  litext: Tips
+
+- ahref: #
+  litext: Marketing

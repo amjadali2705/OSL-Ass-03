@@ -1,0 +1,25 @@
+tablistitemdata:
+- isactive: true
+  lihref: tab-1
+  areaselected: true
+  licontent: Modi sit est
+
+- isactive: false
+  lihref: tab-2
+  areaselected: false
+  licontent: Unde praesentium sed
+
+- isactive: false
+  lihref: tab-3
+  areaselected: false
+  licontent: Pariatur explicabo vel
+
+- isactive: false
+  lihref: tab-4
+  areaselected: false
+  licontent: Nostrum qui quasi
+
+- isactive: false
+  lihref: tab-5
+  areaselected: false
+  licontent: Iusto ut expedita aut

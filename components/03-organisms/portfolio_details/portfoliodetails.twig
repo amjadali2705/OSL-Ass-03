@@ -1,0 +1,63 @@
+<section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider slick-slider">
+          
+                <div>
+                    <img src="{{imgsrc1}}" alt="">
+                </div>
+                <div>
+                    <img src="{{imgsrc2}}" alt="">
+                </div>
+                <div>
+                    <img src="{{imgsrc3}}" alt="">
+                </div>
+                <div>
+                    <img src="{{imgsrc4}}" alt="">
+                </div>
+        
+            </div>
+        </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+              
+              {% include "@atoms/heading/heading.twig" with {
+                heading_level: heading_level,
+                heading: heading
+              } %}
+
+              <ul>
+
+                {% for data in projectinformationdata %}
+                    {% include "@molecules/projectinformation/projectinformation.twig" with {
+                        strongcontent: data.strongcontent,
+                        licontent: data.licontent
+                    } %}
+
+                {% endfor %}
+              </ul>
+            </div>
+
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              
+              {% include "@atoms/heading/heading.twig" with {
+                heading_level: heading_level2,
+                heading: heading2
+              } %}
+
+              {% include "@atoms/para/para.twig" with {
+                p_content: p_content
+              } %}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>

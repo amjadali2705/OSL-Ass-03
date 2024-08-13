@@ -1,4 +1,4 @@
-import '@fancyapps/ui/dist/fancybox/fancybox.css';
+// import '@fancyapps/ui/dist/fancybox/fancybox.css';
 import { Fancybox } from '@fancyapps/ui';
 import Isotope from 'isotope-layout';
 // Initialize Isotope
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  Fancybox.bind('[data-fancybox="portfolio-gallery-app"]', {
+  Fancybox.bind('[data-fancybox]', {
     //  Add any Fancybox options here
   });
 });

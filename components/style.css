@@ -3665,6 +3665,10 @@ section, .section {
   overflow: clip;
 }
 
+.about a {
+  text-decoration: none;
+}
+
 .clients {
   padding: 20px 0;
 }

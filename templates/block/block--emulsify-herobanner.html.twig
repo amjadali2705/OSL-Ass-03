@@ -1,0 +1,31 @@
+{% block content %}
+  {% set hero_banner = [] %}
+
+
+  {% for value in content["field_herobanner_paragraph"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set bannerheading = paragraph.field_hero_banner_paragraph_head.value %}
+    {% set subheading = paragraph.field_hero_banner_paragraph_subh.value %}
+    {% set btntext = paragraph.field_hero_banner_paragraph_btn.title %}
+    {% set btnlink = paragraph.field_hero_banner_paragraph_btn.uri %}
+    {% set img = paragraph.field_hero_banner_paragraph_img.entity.uri.value %}
+    {% set imgurl = file_url(img) %}
+
+    
+    {% set hero_banner = hero_banner|merge([
+      {
+        'heading': bannerheading,
+        'img_src': imgurl,
+        'p_content': subheading,
+        'btncontent': btntext,
+        'a_href': btnlink
+
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/herobanner/herobanner.twig" with {
+    bannerdata: hero_banner
+  } %}
+{% endblock %}

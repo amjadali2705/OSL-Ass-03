@@ -2,6 +2,26 @@
     width: 100%;
 }
 
+.slick-dots {
+    li {
+        margin: 0 5px; /* Adjust spacing between dashes */
+    }
+    
+    li button::before {
+        // content: ""; /* Replace the dot with a dash */
+        font-size: 12px; /* Set the length of the dash */
+        color: gray; /* Default color for inactive dashes */
+        line-height: 1; /* Adjust line-height to control vertical alignment */
+        display: inline-block; /* Ensure it behaves like a block element for height adjustments */
+        // transform: scaleY(5); /* Scale vertically to increase height (adjust this value as needed) */
+    }
+
+    /* Active state styling */
+    li.slick-active button::before {
+        color: #d9232d; /* Active dash color */
+    }
+}
+
 .portfolio-details .portfolio-info {
     background-color: #ffffff;
     padding: 30px;

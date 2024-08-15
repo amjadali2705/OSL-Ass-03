@@ -1,6 +1,10 @@
 <section id="portfolio" class="portfolio section">
 
-      {% include "@molecules/sectionheading/sectionheading.twig" %}
+      {% include "@molecules/sectionheading/sectionheading.twig" with {
+        heading_level: heading_level,
+        heading: heading,
+        p_content: p_content
+      } %}
 
       <div class="container">
 

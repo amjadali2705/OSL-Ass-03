@@ -2929,6 +2929,7 @@ p {
 
 .service-item .title a {
   color: #556270;
+  text-decoration: none;
 }
 
 .service-item:hover .title a {

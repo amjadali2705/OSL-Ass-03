@@ -1,0 +1,35 @@
+{% block content %}
+
+  {% set aboutusheading = content.field_about_us_heading['#items'][0].value %}
+  {% set aboutussubheading = content.field_aboutus_subheading['#items'][0].value %}
+  {% set aboutuspara1 = content.field_about_us_paragraph1_conten['#items'][0].value %}
+  {% set aboutuspara2 = content.field_about_us_paragraph2_conten['#items'][0].value %}
+
+  {# {{dump(content.field_portfolio_subheading['#items'][0].value)}} #}
+
+  {# {% for value in content["field_portfolio_paragraph"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set portfolioparaheading = paragraph.field_portfolio_paragraph_headin.value %}
+    {% set portfolioparasubheading = paragraph.field_portfolio_paragraph_subhea.value %}
+    {% set img = paragraph.field_portfolio_paragraph_img.entity.uri.value %}
+    {% set imgurl = file_url(img) %}
+
+    
+    {% set sailor_portfolio = sailor_portfolio|merge([
+      {
+        'h4content': portfolioparaheading,
+        'img_src': imgurl,
+        'pcontent': portfolioparasubheading
+
+      }
+    ]) %}
+
+  {% endfor %} #}
+
+  {% include "@organisms/aboutus/aboutus.twig" with {
+    heading: aboutusheading,
+    p_content: aboutussubheading,
+    pcontent: aboutuspara1,
+    ptext: aboutuspara2
+  } %}
+{% endblock %}

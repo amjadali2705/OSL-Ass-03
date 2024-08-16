@@ -3,12 +3,12 @@ heading: "About"
 p_content: "About Us"
 
 pcontent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-checkicon: bi bi-check2-circle
-spancontent1: Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-spancontent2: Duis aute irure dolor in reprehenderit in voluptate velit.
-spancontent3: Ullamco laboris nisi ut aliquip ex ea commodo
+# checkicon: bi bi-check2-circle
+# spancontent1: Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# spancontent2: Duis aute irure dolor in reprehenderit in voluptate velit.
+# spancontent3: Ullamco laboris nisi ut aliquip ex ea commodo
 
 ptext: Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-spancontent: Read More
-btnicon: bi bi-arrow-right
-ahref: about.html
+# spancontent: Read More
+# btnicon: bi bi-arrow-right
+# ahref: about.html

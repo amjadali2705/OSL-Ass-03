@@ -1,7 +1,7 @@
 <section id="portfolio" class="portfolio section">
 
       {% include "@molecules/sectionheading/sectionheading.twig" with {
-        heading_level: heading_level,
+        heading_level: 2,
         heading: heading,
         p_content: p_content
       } %}
@@ -10,7 +10,13 @@
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          {% include "@molecules/portfoliofilters/portfoliofilters.twig" %}
+          {# {% include "@molecules/portfoliofilters/portfoliofilters.twig" %} #}
+          <ul class="portfolio-filters isotope-filters aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+    <li data-filter="*" class="filter-active">All</li>
+    <li data-filter=".filter-app" class="">App</li>
+    <li data-filter=".filter-product" class="">Card</li>
+    <li data-filter=".filter-branding" class="">Web</li>
+</ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1249.11px;">
 

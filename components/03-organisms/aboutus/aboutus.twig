@@ -1,7 +1,7 @@
 <section id="about" class="about section">
 
   {% include "@molecules/sectionheading/sectionheading.twig" with {
-    heading_level: heading_level,
+    heading_level: 2,
     heading: heading,
     p_content: p_content
   } %}
@@ -14,10 +14,18 @@
         {% include "@molecules/aboutus1/aboutus1.twig" with {
           p_content: pcontent
         } %}
+
+        <ul>
+        <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+        <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+        <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
+    </ul>
       </div>
 
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        {% include "@molecules/aboutus2/aboutus2.twig" %}
+        {% include "@molecules/aboutus2/aboutus2.twig" with {
+          ptext: ptext,
+        } %}
       </div>
 
     </div>

@@ -6,15 +6,15 @@
     {% set paragraph = value.entity %}
     {% set heading = paragraph.field_sailor_services_para_headi.value %}
     {% set subheading = paragraph.field_sailor_services_para_subhe.value %}
+    {% set icon = paragraph.field_services_icon.value %}
 
-    {# {{dump(paragraph.field_sailor_services_para_icon.value)}} #}
-
+    
     
     {% set sailor_services = sailor_services|merge([
       {
         'h4text': heading,
-        'paragraph': subheading
-
+        'paragraph': subheading,
+        'serviceitemicon': icon
       }
     ]) %}
 
@@ -24,3 +24,5 @@
     sailorservices: sailor_services
   } %}
 {% endblock %}
+
+{# {{dump(content["field_sailor_services_paragraph"]["#items"].entity.	field_services_icon.value)}} #}

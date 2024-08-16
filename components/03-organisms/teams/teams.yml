@@ -4,21 +4,37 @@ teamsdata:
   heading: Walter White
   spancontent: Chief Executive Officer
   p_content: Explicabo voluptatem mollitia et repellat qui dolorum quasi
+  socialicon1: bi bi-twitter-x
+  socialicon2: bi bi-facebook
+  socialicon3: bi bi-instagram
+  socialicon4: bi bi-linkedin
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/team/team-2.jpg"
   heading_level: 4
   heading: Sarah Jhonson
   spancontent: Product Manager
   p_content: Aut maiores voluptates amet et quis praesentium qui senda para
+  socialicon1: bi bi-twitter-x
+  socialicon2: bi bi-facebook
+  socialicon3: bi bi-instagram
+  socialicon4: bi bi-linkedin
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/team/team-3.jpg"
   heading_level: 4
   heading: William Anderson
   spancontent: CTO
   p_content: Quisquam facilis cum velit laborum corrupti fuga rerum quia
+  socialicon1: bi bi-twitter-x
+  socialicon2: bi bi-facebook
+  socialicon3: bi bi-instagram
+  socialicon4: bi bi-linkedin
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/team/team-4.jpg"
   heading_level: 4
   heading: Amanda Jepson
   spancontent: Accountant
   p_content: Explicabo voluptatem mollitia et repellat qui dolorum quasi
+  socialicon1: bi bi-twitter-x
+  socialicon2: bi bi-facebook
+  socialicon3: bi bi-instagram
+  socialicon4: bi bi-linkedin

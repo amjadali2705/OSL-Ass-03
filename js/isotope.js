@@ -1,6 +1,6 @@
 // import '@fancyapps/ui/dist/fancybox/fancybox.css';
-import { Fancybox } from '@fancyapps/ui';
-import Isotope from 'isotope-layout';
+// import { Fancybox } from '@fancyapps/ui';
+// import Isotope from 'isotope-layout';
 // Initialize Isotope
 document.addEventListener('DOMContentLoaded', () => {
   const iso = new Isotope('.isotope-container', {

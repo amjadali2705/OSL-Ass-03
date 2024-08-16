@@ -2,12 +2,30 @@ isactiveshow: true
 tabid: tab1
 pcontent: Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.
 
-tabcontentdata:
-- h4text: Repudiandae rerum velit modi et officia quasi facilis
-  ptext: Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.
+icon1: bi bi-check2
+heading1: Repudiandae rerum velit modi et officia quasi facilis
+heading_level1: 4
+ptext1: Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.
 
-- h4text: Incidunt non veritatis illum ea ut nisi
-  ptext: Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.
+icon2: bi bi-check2
+heading2: Incidunt non veritatis illum ea ut nisi
+ptext2: Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.
+heading_level2: 4
 
-- h4text: Omnis ab quia nemo dignissimos rem eum quos..
-  ptext: Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.
+icon3: bi bi-check2
+heading3: Omnis ab quia nemo dignissimos rem eum quos..
+ptext3: Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.
+heading_level3: 4
+
+# tabcontentdata:
+# - h4text: Repudiandae rerum velit modi et officia quasi facilis
+#   ptext: Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.
+#   icon1: bi bi-check2
+
+# - h4text: Incidunt non veritatis illum ea ut nisi
+#   ptext: Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.
+#   tabitemicon: bi bi-check2
+
+# - h4text: Omnis ab quia nemo dignissimos rem eum quos..
+#   ptext: Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.
+#   tabitemicon: bi bi-check2

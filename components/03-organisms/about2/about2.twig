@@ -16,14 +16,14 @@
           <div class="col-lg-7">
             <h3 class="pt-0 pt-lg-5">{{h3item}}</h3>
 
-            {# <!-- Tabs -->
+            <!-- Tabs -->
             <ul class="nav nav-pills mb-3" role="tablist">
               <li><a class="nav-link active" data-bs-toggle="pill" href="#about-2-tab1" aria-selected="true" role="tab">Saepe fuga</a></li>
               <li><a class="nav-link" data-bs-toggle="pill" href="#about-2-tab2" aria-selected="false" role="tab" tabindex="-1">Voluptates</a></li>
               <li><a class="nav-link" data-bs-toggle="pill" href="#about-2-tab3" aria-selected="false" role="tab" tabindex="-1">Corrupti</a></li>
-            </ul><!-- End Tabs --> #}
+            </ul><!-- End Tabs -->
 
-            {% include "@molecules/about2tab/about2tab.twig" %}
+            {# {% include "@molecules/about2tab/about2tab.twig" %} #}
 
             <!-- Tab Content -->
             <div class="tab-content">
@@ -31,10 +31,21 @@
                 {% for data in tabsdata %}
 
                     {% include "@molecules/tabcontent/tabcontent.twig" with {
-                        isactiveshow: data.isactiveshow,
-                        tabid: data.tabid,
+                        isactiveshow: loop.first ? 'active show' : ' ',
+                        tabid: "tab" ~ loop.index,
                         pcontent: data.pcontent,
-                        tabcontentdata: data.lists
+                        icon1: data.icon1,
+                        heading1: data.heading1,
+                        heading_level1: data.heading_level1,
+                        ptext1: data.ptext1,
+                        icon2: data.icon2,
+                        heading2: data.heading2,
+                        heading_level2: data.heading_level2,
+                        ptext2: data.ptext2,
+                        icon3: data.icon3,
+                        heading3: data.heading3,
+                        heading_level3: data.heading_level3,
+                        ptext3: data.ptext3
                     } %}
 
                 {% endfor %}

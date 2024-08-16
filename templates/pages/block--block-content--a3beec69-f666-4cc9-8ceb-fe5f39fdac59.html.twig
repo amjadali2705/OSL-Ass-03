@@ -1,0 +1,23 @@
+{% block content %}
+  {% set sailor_clients = [] %}
+
+
+  {% for value in content["field_sailor_clients_paragraph"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set img = paragraph.field_sailor_clients_paragraph_i.entity.uri.value %}
+    {% set imgurl = file_url(img) %}
+
+    
+    {% set sailor_clients = sailor_clients|merge([
+      {
+        'clientimgsrc': imgurl
+
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/sailorclients/sailorclients.twig" with {
+    clientimages: sailor_clients
+  } %}
+{% endblock %}

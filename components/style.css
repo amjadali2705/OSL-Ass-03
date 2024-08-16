@@ -3434,30 +3434,6 @@ p {
   background: color-mix(in srgb, #d9232d, transparent 20%);
 }
 
-.nav-pills {
-  border-bottom: 1px solid color-mix(in srgb, #444444, transparent 85%);
-}
-
-.nav-link.active {
-  color: #d9232d;
-  background: none;
-  border-bottom: 3px solid #d9232d;
-}
-
-.nav-link {
-  background: none !important;
-  font-size: 18px;
-  font-weight: 400;
-  color: #444444 !important;
-  padding: 12px 0px;
-  margin-bottom: -2px;
-  border-radius: 0px !important;
-}
-
-.nav-pills li + li {
-  margin-left: 40px;
-}
-
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -3834,6 +3810,30 @@ section, .section {
   font-weight: 700;
   color: #444444;
   font-size: "Raleway", sans-serif;
+}
+
+.nav-pills {
+  border-bottom: 1px solid color-mix(in srgb, #444444, transparent 85%);
+}
+
+.nav-link.active {
+  color: #d9232d;
+  background: none;
+  border-bottom: 3px solid #d9232d;
+}
+
+.nav-link {
+  background: none !important;
+  font-size: 18px;
+  font-weight: 400;
+  color: #444444 !important;
+  padding: 12px 0px;
+  margin-bottom: -2px;
+  border-radius: 0px !important;
+}
+
+.nav-pills li + li {
+  margin-left: 40px;
 }
 
 .features {

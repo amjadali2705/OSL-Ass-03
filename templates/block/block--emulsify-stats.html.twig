@@ -1,0 +1,26 @@
+{% block content %}
+  {% set sailor_stats = [] %}
+
+
+  {% for value in content["field_stats_paragraph"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set statsnumber = paragraph.field_stats_para_num.value %}
+    {% set statscontent = paragraph.field_stats_para_content.value %}
+
+{# {{dump(paragraph.field_stats_para_num.value)}}     #}
+    
+    {% set sailor_stats = sailor_stats|merge([
+      {
+        'p_content': statscontent,
+        'statsnum': statsnumber,
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/stats/stats.twig" with {
+    statsdata: sailor_stats
+  } %}
+{% endblock %}
+
+{# {{dump(content["field_sailor_services_paragraph"]["#items"].entity.	field_services_icon.value)}} #}

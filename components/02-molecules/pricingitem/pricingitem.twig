@@ -4,23 +4,23 @@
         {# <span class="advanced">Advanced</span> #}
 
         {% if showadvanced %}
-            <span class="advanced">Advanced</span>
+            <span class="advanced">{{advancedtext}}</span>
         {% endif %}
 
         {# <h3>Free</h3> #}
         {% include "@atoms/heading/heading.twig" with {
-            heading_level: heading_level,
+            heading_level: '3',
             heading: heading
         } %}
 
-        <h4><sup>$</sup>{{h4content}}<span> / month</span></h4>
+        <h4><sup>{{suptext}}</sup>{{h4content}}<span>{{spantext}}</span></h4>
 
         <ul>
-            <li {% if isna1 %}class="na"{% endif %}>Aida dere</li>
-            <li {% if isna2 %}class="na"{% endif %}>Nec feugiat nisl</li>
-            <li {% if isna3 %}class="na"{% endif %}>Nulla at volutpat dola</li>
-            <li {% if isna4 %}class="na"{% endif %}>Pharetra massa</li>
-            <li {% if isna5 %}class="na"{% endif %}>Massa ultricies mi</li>
+            <li {% if isna1 %}class="na"{% endif %}>{{litext1}}</li>
+            <li {% if isna2 %}class="na"{% endif %}>{{litext2}}</li>
+            <li {% if isna3 %}class="na"{% endif %}>{{litext3}}</li>
+            <li {% if isna4 %}class="na"{% endif %}>{{litext4}}</li>
+            <li {% if isna5 %}class="na"{% endif %}>{{litext5}}</li>
         </ul>
 
         <div class="btn-wrap">
@@ -28,7 +28,7 @@
             {% include "@atoms/btn/btn.twig" with {
                 btncontent: btncontent,
                 a_href: a_href,
-                modifier_class: btn__modifier_classes
+                modifier_class: "btn-buy"
             } %}
         </div>
     </div>

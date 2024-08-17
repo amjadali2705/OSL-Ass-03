@@ -1,13 +1,21 @@
 isfeatured: false
 showadvanced: false
+advancedtext: Advanced
 heading_level: 3
 heading: Free
+suptext: $
 h4content: 0
+spantext:  / month
 isna1: false
+litext1: Aida dere
 isna2: false
+litext2: Nec feugiat nisl
 isna3: false
+litext3: Nulla at volutpat dola
 isna4: true
+litext4: Pharetra massa
 isna5: true
+litext5: Massa ultricies mi
 btncontent: Buy Now
 a_href: "#"
 btn__modifier_classes: "btn-buy"

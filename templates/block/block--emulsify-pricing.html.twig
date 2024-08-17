@@ -1,0 +1,60 @@
+{% block content %}
+  {% set sailor_pricing = [] %}
+
+
+  {% for value in content["field_pricing_paragraph"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set pricingisfeatured = paragraph.field_pricing_para_isfeatured.value == '1' %}
+    {% set pricingshowadvanced = paragraph.field_pricing_para_showadvanced.value == '1' %}
+    {% set pricingadvancedtext = paragraph.field_pricing_para_advancedtext.value %}
+    {% set pricingheading = paragraph.field_pricing_para_heading.value %}
+    {% set pricingsuptext = paragraph.field_pricing_para_suptext.value %}
+    {% set pricingh4text = paragraph.field_pricing_para_h4text.value %}
+    {% set pricingspantext = paragraph.field_pricing_para_spantext.value %}
+    {% set pricingisna1 = paragraph.field_pricing_para_isna1.value == '1' %}
+    {% set pricinglitext1 = paragraph.field_pricing_para_litext1.value %}
+    {% set pricingisna2 = paragraph.field_pricing_para_isna2.value == '1' %}
+    {% set pricinglitext2 = paragraph.field_pricing_para_litext2.value %}
+    {% set pricingisna3 = paragraph.field_pricing_para_isna3.value == '1' %}
+    {% set pricinglitext3 = paragraph.field_pricing_para_litext3.value %}
+    {% set pricingisna4 = paragraph.field_pricing_para_isna4.value == '1' %}
+    {% set pricinglitext4 = paragraph.field_pricing_para_litext4.value %}
+    {% set pricingisna5 = paragraph.field_pricing_para_isna5.value == '1' %}
+    {% set pricinglitext5 = paragraph.field_pricing_para_litext5.value %}
+    {% set pricingbtntext = paragraph.field_pricing_para_btn.title %}
+    {% set pricingbtnlink = paragraph.field_pricing_para_btn.uri %}
+    
+
+    {# {{dump(pricingisfeatured)}} #}
+
+
+    {% set sailor_pricing = sailor_pricing|merge([
+      {
+        'isfeatured': pricingisfeatured,
+        'showadvanced': pricingshowadvanced,
+        'advancedtext': pricingadvancedtext,
+        'heading': pricingheading,
+        'suptext': pricingsuptext,
+        'h4content': pricingh4text,
+        'spantext': pricingspantext,
+        'isna1': pricingisna1,
+        'litext1': pricinglitext1,
+        'isna2': pricingisna2,
+        'litext2': pricinglitext2,
+        'isna3': pricingisna3,
+        'litext3': pricinglitext3,
+        'isna4': pricingisna4,
+        'litext4': pricinglitext4,
+        'isna5': pricingisna5,
+        'litext5': pricinglitext5,
+        'btncontent': pricingbtntext,
+        'a_href': pricingbtnlink
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/pricing/pricing.twig" with {
+    pricingdata: sailor_pricing
+  } %}
+{% endblock %}

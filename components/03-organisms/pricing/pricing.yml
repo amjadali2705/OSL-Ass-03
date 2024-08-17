@@ -1,56 +1,88 @@
 pricingdata:
 - isfeatured: false
   showadvanced: false
+  advancedtext: Advanced
   heading_level: 3
   heading: Free
+  suptext: $
   h4content: 0
+  spantext:  / month
   isna1: false
+  litext1: Aida dere
   isna2: false
+  litext2: Nec feugiat nisl
   isna3: false
+  litext3: Nulla at volutpat dola
   isna4: true
+  litext4: Pharetra massa
   isna5: true
+  litext5: Massa ultricies mi
   btncontent: Buy Now
   a_href: "#"
   btn__modifier_classes: "btn-buy"
 
 - isfeatured: true
   showadvanced: false
+  advancedtext: Advanced
   heading_level: 3
   heading: Business
+  suptext: $
   h4content: 19
+  spantext:  / month
   isna1: false
+  litext1: Aida dere
   isna2: false
+  litext2: Nec feugiat nisl
   isna3: false
+  litext3: Nulla at volutpat dola
   isna4: false
+  litext4: Pharetra massa
   isna5: true
+  litext5: Massa ultricies mi
   btncontent: Buy Now
   a_href: "#"
   btn__modifier_classes: "btn-buy"
 
 - isfeatured: false
   showadvanced: false
+  advancedtext: Advanced
   heading_level: 3
   heading: Developer
+  suptext: $
   h4content: 29
+  spantext:  / month
   isna1: false
+  litext1: Aida dere
   isna2: false
+  litext2: Nec feugiat nisl
   isna3: false
+  litext3: Nulla at volutpat dola
   isna4: false
+  litext4: Pharetra massa
   isna5: false
+  litext5: Massa ultricies mi
   btncontent: Buy Now
   a_href: "#"
   btn__modifier_classes: "btn-buy"
 
 - isfeatured: false
   showadvanced: true
+  advancedtext: Advanced
   heading_level: 3
   heading: Ultimate
+  suptext: $
   h4content: 49
+  spantext:  / month
   isna1: false
+  litext1: Aida dere
   isna2: false
+  litext2: Nec feugiat nisl
   isna3: false
+  litext3: Nulla at volutpat dola
   isna4: false
+  litext4: Pharetra massa
   isna5: false
+  litext5: Massa ultricies mi
   btncontent: Buy Now
   a_href: "#"
   btn__modifier_classes: "btn-buy"

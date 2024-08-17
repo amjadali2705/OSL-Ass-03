@@ -1,6 +1,10 @@
 <section id="skills" class="skills section">
 
-      {% include "@molecules/sectionheading/sectionheading.twig" %}
+      {% include "@molecules/sectionheading/sectionheading.twig" with {
+        heading_level: '2',
+        heading: heading,
+        p_content: p_content
+      } %}
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 

@@ -1,8 +1,8 @@
 .progress {
-    height: 60px;
-    display: block;
-    background: none;
-    border-radius: 0;
+    height: 60px !important;
+    display: block !important;
+    background: none !important;
+    border-radius: 0 !important;
 }
 
 .progress .skill {
@@ -28,6 +28,6 @@
 .progress-bar {
     // width: 1px;
     height: 10px;
-    transition: 0.9s;
-    background-color: #d9232d;
+    transition: 0.9s !important;
+    background-color: #d9232d !important;
 }

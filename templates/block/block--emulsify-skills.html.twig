@@ -1,0 +1,53 @@
+{% block content %}
+
+  {% set skillsheading = content.field_skills_heading['#items'][0].value %}
+  {% set skillssubheading = content.field_skills_subheading['#items'][0].value %}
+
+  {# {{dump(content.field_portfolio_subheading['#items'][0].value)}} #}
+  {% set sailor_skills1 = [] %}
+
+  {% for value in content["field_skills_paragraph"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set skillsparaheading = paragraph.field_skills_para_heading.value %}
+    {% set skillsparavalnow = paragraph.field_skills_para_val.value %}
+    {% set skillsparaival = paragraph.field_skills_para_val.value %}
+    {% set skillsparawidth = paragraph.field_skills_para_width.value %}
+
+    {% set sailor_skills1 = sailor_skills1|merge([
+      {
+        'spancontent': skillsparaheading,
+        'ival': skillsparaival,
+        'valuenow': skillsparavalnow,
+        'width': skillsparawidth
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% set sailor_skills2 = [] %}
+
+  {% for value in content["field_skills_paragraph2"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set skillspara2heading = paragraph.field_skills_para2_heading.value %}
+    {% set skillspara2valnow = paragraph.field_skills_para2_valnow.value %}
+    {% set skillspara2ival = paragraph.field_skills_para2_ival.value %}
+    {% set skillspara2width = paragraph.field_skills_para2_width.value %}
+
+    {% set sailor_skills2 = sailor_skills2|merge([
+      {
+        'spancontent': skillspara2heading,
+        'ival': skillspara2ival,
+        'valuenow': skillspara2valnow,
+        'width': skillspara2width
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/skills/skills.twig" with {
+    progressdata1: sailor_skills1, 
+    progressdata2: sailor_skills2, 
+    heading: skillsheading,
+    p_content: skillssubheading
+  } %}
+{% endblock %}

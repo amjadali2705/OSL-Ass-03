@@ -1,0 +1,58 @@
+{% block content %}
+
+  {% set featuresheading = content.field_sailor_features_heading['#items'][0].value %}
+  {% set featuressubheading = content.field_sailor_features_subheading['#items'][0].value %}
+
+  {# {{dump(content.field_portfolio_subheading['#items'][0].value)}} #}
+  {% set sailor_featuretablist = [] %}
+
+  {% for value in content["field_feature_tablist_para"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set tablistisactive = paragraph.field_tab_isactive.value == '1' %}
+    {% set tablisthref = paragraph.field_tab_lihref.value %}
+    {% set tablistisselected = paragraph.field_tab_isselected.value == '1' %}
+    {% set tablistlitext = paragraph.field_tab_licontent.value %}
+
+    {% set sailor_featuretablist = sailor_featuretablist|merge([
+      {
+        'isactive': tablistisactive,
+        'lihref': tablisthref,
+        'areaselected': tablistisselected,
+        'licontent': tablistlitext
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% set sailor_featuretabdata = [] %}
+
+  {% for value in content["field_features_tabdata_para"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set tabdataisactive = paragraph.field_feature_tabdata_para.value == '1' %}
+    {% set tabdataid = paragraph.field_feature_tabdata_id.value %}
+    {% set tabdataheading = paragraph.field_feature_tabdata_heading.value %}
+    {% set tabdatacontent1 = paragraph.field_feature_tabdata_content1.value %}
+    {% set tabdatacontent2 = paragraph.field_feature_tabdata_content2.value %}
+    {% set imguri = paragraph.field_feature_tabdata_img.entity.uri.value %}
+    {% set tabdataimgurl = file_url(imguri) %}
+
+    {% set sailor_featuretabdata = sailor_featuretabdata|merge([
+      {
+        'isactive': tabdataisactive,
+        'tabid': tabdataid,
+        'heading': tabdataheading,
+        'ptext': tabdatacontent1,
+        'p_content': tabdatacontent2,
+        'img_src': tabdataimgurl
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/features/features.twig" with {
+    tablistitemdata: sailor_featuretablist, 
+    featuretabsdata: sailor_featuretabdata, 
+    heading: featuresheading,
+    p_content: featuressubheading
+  } %}
+{% endblock %}

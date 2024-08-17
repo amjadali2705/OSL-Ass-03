@@ -52,6 +52,7 @@ h3item: Neque officiis dolore maiores et exercitationem quae est seda lidera pat
     
 tabsdata:
 - tabid: tab1
+  isactiveshow: true
   pcontent: Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.
   icon1: bi bi-check2
   heading1: Repudiandae rerum velit modi et officia quasi facilis
@@ -67,6 +68,7 @@ tabsdata:
   ptext3: Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.
 
 - tabid: tab2
+  isactiveshow: false
   pcontent: Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.
   icon1: bi bi-check2
   heading1: Repudiandae rerum velit modi et officia quasi facilis
@@ -82,6 +84,7 @@ tabsdata:
   ptext3: Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.
 
 - tabid: tab3
+  isactiveshow: false
   pcontent: Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.
   icon1: bi bi-check2
   heading1: Repudiandae rerum velit modi et officia quasi facilis

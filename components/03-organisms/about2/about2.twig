@@ -31,8 +31,8 @@
                 {% for data in tabsdata %}
 
                     {% include "@molecules/tabcontent/tabcontent.twig" with {
-                        isactiveshow: loop.first ? 'active show' : ' ',
-                        tabid: "tab" ~ loop.index,
+                        isactiveshow: data.isactiveshow,
+                        tabid: data.tabid,
                         pcontent: data.pcontent,
                         icon1: data.icon1,
                         heading1: data.heading1,

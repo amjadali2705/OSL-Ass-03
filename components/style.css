@@ -3856,22 +3856,22 @@ section, .section {
 }
 
 .features .nav-link:hover {
-  color: #d9232d;
+  color: #d9232d !important;
 }
 
 .features .nav-link.active {
   color: #d9232d !important;
-  border-color: #d9232d;
-  background-color: #ffffff;
+  border-color: #d9232d !important;
+  background-color: #ffffff !important;
 }
 
 .features .nav-link {
-  border: 0;
+  border: 0 !important;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
-  color: #444444;
-  border-radius: 0;
-  border-right: 2px solid color-mix(in srgb, #444444, transparent 90%);
+  color: #444444 !important;
+  border-radius: 0 !important;
+  border-right: 2px solid color-mix(in srgb, #444444, transparent 90%) !important;
   font-weight: 600;
   font-size: 15px;
 }

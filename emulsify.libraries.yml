@@ -4,10 +4,13 @@ global:
       components/style.css: {}
       https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css: {}
       https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css: {}
+      https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: {}
   js:
      https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js: {}
      js/isotope.js: {}
      https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js: {}
+     js/slick.js: {}
+     https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: {}
   
 
 bootstrap_cdn:

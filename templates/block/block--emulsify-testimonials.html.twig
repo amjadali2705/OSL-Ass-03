@@ -1,0 +1,45 @@
+{% block content %}
+  {% set sailor_testimonials = [] %}
+
+
+  {% for value in content["field_testimonials_paragraph"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set testimonialsparaheading = paragraph.field_testimonials_para_heading.value %}
+    {% set testimonialsparasubheading = paragraph.field_testimonials_para_subheadi.value %}
+    {% set testimonialsparacontent = paragraph.field_testimonials_para_content.value %}
+    {% set imguri = paragraph.field_testimonials_para_img.entity.uri.value %}
+    {% set testimonialsparaimgurl = file_url(imguri) %}
+    {% set testimonialsparaicon1 = paragraph.field_testimonials_para_icon1.value %}
+    {% set testimonialsparaicon2 = paragraph.field_testimonials_para_icon2.value %}
+    {% set testimonialsparaicon3 = paragraph.field_testimonials_para_icon3.value %}
+    {% set testimonialsparaicon4 = paragraph.field_testimonials_para_icon4.value %}
+    {% set testimonialsparaicon5 = paragraph.field_testimonials_para_icon5.value %}
+    {% set testimonialsparaicon6 = paragraph.field_testimonials_para_icon6.value %}
+    {% set testimonialsparaicon7 = paragraph.field_testimonials_para_icon7.value %}
+
+    
+    
+    {% set sailor_testimonials = sailor_testimonials|merge([
+      {
+        'img_src': testimonialsparaimgurl,
+        'heading1': testimonialsparaheading,
+        'heading2': testimonialsparasubheading,
+        'spancontent': testimonialsparacontent,
+        'icon1': testimonialsparaicon1,
+        'icon2': testimonialsparaicon2,
+        'icon3': testimonialsparaicon3,
+        'icon4': testimonialsparaicon4,
+        'icon5': testimonialsparaicon5,
+        'icon6': testimonialsparaicon6,
+        'icon7': testimonialsparaicon7
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/testimonials/testimonials.twig" with {
+    testimonialsdata: sailor_testimonials
+  } %}
+{% endblock %}
+
+{# {{dump(content["field_sailor_services_paragraph"]["#items"].entity.	field_services_icon.value)}} #}

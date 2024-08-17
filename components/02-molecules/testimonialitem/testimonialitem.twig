@@ -8,24 +8,24 @@
 
               {# <h3>Saul Goodman</h3> #}
               {% include "@atoms/heading/heading.twig" with {
-                heading_level: heading_level1,
+                heading_level: '3',
                 heading: heading1
               } %}
 
               {# <h4>Ceo &amp; Founder</h4> #}
               {% include "@atoms/heading/heading.twig" with {
-                heading_level: heading_level2,
+                heading_level: '4',
                 heading: heading2
               } %}
 
               <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="{{icon1}}"></i><i class="{{icon2}}"></i><i class="{{icon3}}"></i><i class="{{icon4}}"></i><i class="{{icon5}}"></i>
               </div>
 
               <p>
-                <i class="bi bi-quote quote-icon-left"></i>
+                <i class="{{icon6}}"></i>
                 <span>{{spancontent}}</span>
-                <i class="bi bi-quote quote-icon-right"></i>
+                <i class="{{icon7}}"></i>
               </p>
               
             </div>

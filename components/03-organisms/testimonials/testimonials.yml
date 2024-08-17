@@ -5,6 +5,13 @@ testimonialsdata:
   heading_level2: 4
   heading2: Ceo & Founder
   spancontent: Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+  icon1: bi bi-star-fill
+  icon2: bi bi-star-fill
+  icon3: bi bi-star-fill
+  icon4: bi bi-star-fill
+  icon5: bi bi-star-fill
+  icon6: bi bi-quote quote-icon-left
+  icon7: bi bi-quote quote-icon-right
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/testimonials/testimonials-2.jpg"
   heading_level1: 3
@@ -12,6 +19,13 @@ testimonialsdata:
   heading_level2: 4
   heading2: Designer
   spancontent: Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+  icon1: bi bi-star-fill
+  icon2: bi bi-star-fill
+  icon3: bi bi-star-fill
+  icon4: bi bi-star-fill
+  icon5: bi bi-star-fill
+  icon6: bi bi-quote quote-icon-left
+  icon7: bi bi-quote quote-icon-right
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/testimonials/testimonials-3.jpg"
   heading_level1: 3
@@ -19,6 +33,13 @@ testimonialsdata:
   heading_level2: 4
   heading2: Store Owner
   spancontent: Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+  icon1: bi bi-star-fill
+  icon2: bi bi-star-fill
+  icon3: bi bi-star-fill
+  icon4: bi bi-star-fill
+  icon5: bi bi-star-fill
+  icon6: bi bi-quote quote-icon-left
+  icon7: bi bi-quote quote-icon-right
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/testimonials/testimonials-4.jpg"
   heading_level1: 3
@@ -26,6 +47,13 @@ testimonialsdata:
   heading_level2: 4
   heading2: Freelancer
   spancontent: Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+  icon1: bi bi-star-fill
+  icon2: bi bi-star-fill
+  icon3: bi bi-star-fill
+  icon4: bi bi-star-fill
+  icon5: bi bi-star-fill
+  icon6: bi bi-quote quote-icon-left
+  icon7: bi bi-quote quote-icon-right
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/testimonials/testimonials-5.jpg"
   heading_level1: 3
@@ -33,6 +61,13 @@ testimonialsdata:
   heading_level2: 4
   heading2: Entrepreneur
   spancontent: Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+  icon1: bi bi-star-fill
+  icon2: bi bi-star-fill
+  icon3: bi bi-star-fill
+  icon4: bi bi-star-fill
+  icon5: bi bi-star-fill
+  icon6: bi bi-quote quote-icon-left
+  icon7: bi bi-quote quote-icon-right
 
 - img_src: "https://bootstrapmade.com/demo/templates/Sailor/assets/img/testimonials/testimonials-6.jpg"
   heading_level1: 3
@@ -40,3 +75,10 @@ testimonialsdata:
   heading_level2: 4
   heading2: Store Owner
   spancontent: Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste cupiditate sed temporibus est aspernatur. Sequi officiis ea et quia quidem.
+  icon1: bi bi-star-fill
+  icon2: bi bi-star-fill
+  icon3: bi bi-star-fill
+  icon4: bi bi-star-fill
+  icon5: bi bi-star-fill
+  icon6: bi bi-quote quote-icon-left
+  icon7: bi bi-quote quote-icon-right

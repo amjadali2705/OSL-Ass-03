@@ -1,0 +1,54 @@
+{% block content %}
+  {% set sailor_aboutus2 = [] %}
+
+  {% set imguri = content.field_aboutus2_img['#items'][0].entity.uri.value %}
+  {% set imgurl = file_url(imguri) %}
+  {% set aboutus2heading = content.field_aboutus2_heading['#items'][0].value %}
+
+
+  {# {{dump(aboutus2heading)}} #}
+
+  {# {{dump(content.field_portfolio_subheading['#items'][0].value)}} #}
+  {% for value in content["field_aboutus2_para"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set aboutus2isactiveshow = paragraph.field_aboutus2_para_isactiveshow.value == '1' %}
+    {% set aboutus2tabid = paragraph.field_aboutus2_para_tabid.value %}
+    {% set aboutus2paraheading = paragraph.field_aboutus2_para_heading.value %}
+    {% set aboutus2paraheading1 = paragraph.field_aboutus2_para_heading1.value %}
+    {% set aboutus2paraheading2 = paragraph.field_aboutus2_para_heading2.value %}
+    {% set aboutus2paraheading3 = paragraph.field_aboutus2_para_heading3.value %}
+    {% set aboutus2paraicon1 = paragraph.field_aboutus2_para_icon1.value %}
+    {% set aboutus2paraicon2 = paragraph.field_aboutus_para_icon2.value %}
+    {% set aboutus2paraicon3 = paragraph.field_aboutus2_para_icon3.value %}
+    {% set aboutus2parasubheading1 = paragraph.field_aboutus2_para_subheading1.value %}
+    {% set aboutus2parasubheading2 = paragraph.field_aboutus2_para_subheading2.value %}
+    {% set aboutus2parasubheading3 = paragraph.field_aboutus2_para_subheading3.value %}
+
+    {# {{dump(aboutus2tabid)}} #}
+
+    
+    {% set sailor_aboutus2 = sailor_aboutus2|merge([
+      {
+        'tabid': aboutus2tabid,
+        'isactiveshow': aboutus2isactiveshow,
+        'pcontent': aboutus2paraheading,
+        'icon1': aboutus2paraicon1,
+        'heading1': aboutus2paraheading1,
+        'ptext1': aboutus2parasubheading1,
+        'icon2': aboutus2paraicon2,
+        'heading2': aboutus2paraheading2,
+        'ptext2': aboutus2parasubheading2,
+        'icon3': aboutus2paraicon3,
+        'heading3': aboutus2paraheading3,
+        'ptext3': aboutus2parasubheading3
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/about2/about2.twig" with {
+    tabsdata: sailor_aboutus2, 
+    h3item: aboutus2heading,
+    img_src: imgurl
+  } %}
+{% endblock %}

@@ -1,0 +1,39 @@
+{% block content %}
+  {% set sailor_teams = [] %}
+
+
+  {% for value in content["field_teams_paragraph"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set teamsparaheading1 = paragraph.field_teams_para_heading1.value %}
+    {% set teamsparaheading2 = paragraph.field_teams_para_heading2.value %}
+    {% set teamsparasubheading = paragraph.field_teams_para_subheading.value %}
+    {% set imguri = paragraph.field_teams_para_img.entity.uri.value %}
+    {% set teamsparaimgurl = file_url(imguri) %}
+    {% set teamsparaicon1 = paragraph.field_teams_para_icon1.value %}
+    {% set teamsparaicon2 = paragraph.field_teams_para_icon2.value %}
+    {% set teamsparaicon3 = paragraph.field_teams_para_icon3.value %}
+    {% set teamsparaicon4 = paragraph.field_teams_para_icon4.value %}
+
+    
+    
+    {% set sailor_teams = sailor_teams|merge([
+      {
+        'img_src': teamsparaimgurl,
+        'heading': teamsparaheading1,
+        'spancontent': teamsparaheading2,
+        'p_content': teamsparasubheading,
+        'socialicon1': teamsparaicon1,
+        'socialicon2': teamsparaicon2,
+        'socialicon3': teamsparaicon3,
+        'socialicon4': teamsparaicon4
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/teams/teams.twig" with {
+    teamsdata: sailor_teams
+  } %}
+{% endblock %}
+
+{# {{dump(content["field_sailor_services_paragraph"]["#items"].entity.	field_services_icon.value)}} #}

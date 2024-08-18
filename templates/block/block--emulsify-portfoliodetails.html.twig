@@ -1,0 +1,50 @@
+{% block content %}
+
+  {# {{ attach_library('my_awesome_theme/global') }} #}
+
+  {% set imguri1 = content.field_portfolio_details_img1['#items'][0].entity.uri.value %}
+  {% set portfoliodetailsimgurl1 = file_url(imguri1) %}
+  {% set imguri2 = content.field_portfolio_details_img2['#items'][0].entity.uri.value %}
+  {% set portfoliodetailsimgurl2 = file_url(imguri2) %}
+  {% set imguri3 = content.field_portfolio_details_img3['#items'][0].entity.uri.value %}
+  {% set portfoliodetailsimgurl3 = file_url(imguri3) %}
+  {% set imguri4 = content.field_portfolio_details_img4['#items'][0].entity.uri.value %}
+  {% set portfoliodetailsimgurl4 = file_url(imguri4) %}
+  {% set portfoliodetailsheading1 = content.field_portfolio_details_heading1['#items'][0].value %}
+  {% set portfoliodetailsheading2 = content.field_portfolio_details_heading1['#items'][0].value %}
+  {% set portfoliodetailscontent = content.field_portfolio_details_content['#items'][0].value %}
+
+
+  {# {{dump(portfoliodetailsimgurl1)}} #}
+
+  {# {{dump(content.field_portfolio_subheading['#items'][0].value)}} #}
+
+  {% set sailor_portfoliodetails = [] %}
+
+  {% for value in content["field_portfolio_details_paragrap"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set portfoliodetailsstrongtext = paragraph.field_portfolio_details_para_lic.value %}
+    {% set portfoliodetailslitext = paragraph.field_portfolio_details_para_str.value %}
+    
+
+    
+    {% set sailor_portfoliodetails = sailor_portfoliodetails|merge([
+      {
+        'strongcontent': portfoliodetailsstrongtext,
+        'licontent': portfoliodetailslitext
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/portfolio_details/portfoliodetails.twig" with { 
+    imgsrc1: portfoliodetailsimgurl1,
+    imgsrc2: portfoliodetailsimgurl2,
+    imgsrc3: portfoliodetailsimgurl3,
+    imgsrc4: portfoliodetailsimgurl4,
+    heading: portfoliodetailsheading1,
+    projectinformationdata: sailor_portfoliodetails,
+    heading2: portfoliodetailsheading2,
+    p_content: portfoliodetailscontent
+  } %}
+{% endblock %}

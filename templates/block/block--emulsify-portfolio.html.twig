@@ -1,5 +1,9 @@
 {% block content %}
+
+  {{ attach_library('Emulsify/isotope.js') }}
+
   {% set sailor_portfolio = [] %}
+  
 
   {% set portfolioheading = content.field_portfolio_heading['#items'][0].value %}
   {% set portfoliosubheading = content.field_portfolio_subheading['#items'][0].value %}

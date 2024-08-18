@@ -2,6 +2,7 @@ global:
   css:
     theme:
       components/style.css: {}
+      assets/css/style.css: {}
       https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css: {}
       https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css: {}
       https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: {}

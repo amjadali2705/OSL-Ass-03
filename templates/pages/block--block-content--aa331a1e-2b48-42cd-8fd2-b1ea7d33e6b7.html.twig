@@ -1,0 +1,28 @@
+{% block content %}
+  {% set sailor_contacts = [] %}
+
+
+  {% for value in content["field_contacts_paragraph"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set contactheading = paragraph.field_contact_heading.value %}
+    {% set contactsubheading = paragraph.field_contact_subheading.value %}
+    {% set contacticon = paragraph.field_contact_icons.value %}
+
+    
+    
+    {% set sailor_contacts = sailor_contacts|merge([
+      {
+        'icon': contacticon,
+        'heading': contactheading,
+        'p_content': contactsubheading
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/sailorcontact/sailorcontact.twig" with {
+    contacttypedata: sailor_contacts
+  } %}
+{% endblock %}
+
+{# {{dump(content["field_sailor_services_paragraph"]["#items"].entity.	field_services_icon.value)}} #}

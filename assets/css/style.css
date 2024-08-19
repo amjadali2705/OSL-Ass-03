@@ -492,3 +492,7 @@ a {
     color: #ffffff;
     line-height: 0;
 }
+
+.logo {
+  display: flex;
+}

@@ -19,8 +19,8 @@
       <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" fetchpriority="high" />
     </a>
   {% endif %}
-  {% if site_name %}
+  {# {% if site_name %}
     <a href="{{ path('<front>') }}" rel="home" class="logo d-flex align-items-center me-auto"><h1 class="sitename">{{ site_name }}</h1></a>
-  {% endif %}
+  {% endif %} #}
   {{ site_slogan }}
 {% endblock %}

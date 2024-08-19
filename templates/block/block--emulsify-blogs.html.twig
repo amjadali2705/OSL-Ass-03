@@ -1,0 +1,109 @@
+{% block content %}
+
+
+  {# {{dump(content.field_portfolio_subheading['#items'][0].value)}} #}
+  {% set sailor_blogposts = [] %}
+
+  {% for value in content["field_blogposts_item_para"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set imguri = paragraph.field_blogposts_item_para_img.entity.uri.value %}
+    {% set blogpostsimgurl = file_url(imguri) %}
+    {% set blogpostsheading = paragraph.field_blogposts_item_para_headin.value %}
+    {% set blogpostsicon1 = paragraph.field_blogposts_item_para_icon1.value %}
+    {% set blogpostslink1 = paragraph.field_blogposts_item_para_link1.value %}
+    {% set blogpostslitext1 = paragraph.field_posts_item_para_litext1.value %}
+    {% set blogpostsicon2 = paragraph.field_blogposts_item_para_icon2.value %}
+    {% set blogpostslink2 = paragraph.field_blogposts_item_para_link2.value %}
+    {% set blogpostslitext2 = paragraph.field_posts_item_para_litext2.value %}
+    {% set blogpostsicon3 = paragraph.field_blogposts_item_para_icon3.value %}
+    {% set blogpostslink3 = paragraph.field_blogposts_item_para_link3.value %}
+    {% set blogpostslitext3 = paragraph.field_posts_item_para_litext3.value %}
+    {% set blogpostscontent = paragraph.field_blogposts_item_para_ptext.value %}
+    {% set blogpostsbtntext = paragraph.field_blogposts_item_para_btn.title %}
+    {% set blogpostsbtnlink = paragraph.field_blogposts_item_para_btn.uri %}
+
+    {# {{dump(blogpostscontent)}} #}
+
+    {% set sailor_blogposts = sailor_blogposts|merge([
+      {
+        'img_src': blogpostsimgurl,
+        'h2content': blogpostsheading,
+        'icon1': blogpostsicon1,
+        'ahref1': blogpostslink1,
+        'litext1': blogpostslitext1,
+        'icon2': blogpostsicon2,
+        'ahref2': blogpostslink2,
+        'litext2': blogpostslitext2,
+        'icon3': blogpostsicon3,
+        'ahref3': blogpostslink3,
+        'litext3': blogpostslitext3,
+        'p_content': blogpostscontent,
+        'btnhref': blogpostsbtnlink,
+        'btncontent': blogpostsbtntext
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% set sailor_categorieslist = [] %}
+
+  {% for value in content["field_categories_list_para"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set categorieslistlink = paragraph.field_categories_list_para_link.value %}
+    {% set categorieslitext = paragraph.field_categories_list_para_litex.value %}
+    {% set categoriesspantext = paragraph.field_categories_list_para_span.value %}
+
+    {% set sailor_categorieslist = sailor_categorieslist|merge([
+      {
+        'ahref': categorieslistlink,
+        'licontent': categorieslitext,
+        'spancontent': categoriesspantext
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% set sailor_recentposts = [] %}
+
+  {% for value in content["field_recent_posts_para"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set imguri = paragraph.field_recent_posts_para_img.entity.uri.value %}
+    {% set recentpostsimgurl = file_url(imguri) %}
+    {% set recentpostslink = paragraph.field_recent_posts_para_link.value %}
+    {% set recentpostsheading = paragraph.field_recent_posts_para_heading.value %}
+    {% set recentpostsdate = paragraph.field_recent_posts_para_date.value %}
+
+    {% set sailor_recentposts = sailor_recentposts|merge([
+      {
+        'imgsrc': recentpostsimgurl,
+        'ahref': recentpostslink,
+        'h4content': recentpostsheading,
+        'date': recentpostsdate
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% set sailor_tagsdata = [] %}
+
+  {% for value in content["field_tags_data_para"]["#items"] %}
+    {% set paragraph = value.entity %}
+    {% set tagsdatalink = paragraph.field_tags_data_para_link.value %}
+    {% set tagsdatalitext = paragraph.field_tags_data_para_litext.value %}
+
+    {% set sailor_tagsdata = sailor_tagsdata|merge([
+      {
+        'ahref': tagsdatalink,
+        'litext': tagsdatalitext
+      }
+    ]) %}
+
+  {% endfor %}
+
+  {% include "@organisms/blogposts/blogposts.twig" with {
+    blogpostsdata: sailor_blogposts,
+    categorieslistitemdata: sailor_categorieslist, 
+    recentpostitemdata: sailor_recentposts,
+    tagsdata: sailor_tagsdata
+  } %}
+{% endblock %}

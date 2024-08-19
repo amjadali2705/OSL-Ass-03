@@ -18,12 +18,9 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
-{% import _self as menus %}
+{# {% import _self as menus %}
 
-{#
-  We call a macro which calls itself to render the full tree.
-  @see https://twig.symfony.com/doc/3.x/tags/macro.html
-#}
+
 {{ menus.menu_links(items, attributes, 0) }}
 
 {% macro menu_links(items, attributes, menu_level) %}
@@ -50,6 +47,46 @@
           }) }}
         {% else %}
         {{ link(item.title, item.url, {class: 'nav-link'}) }}
+        {% endif %}
+        {% if item.below %}
+          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %} #}
+
+
+{% import _self as menus %}
+
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% if menu_level == 0 %}
+      <ul{{ attributes }}>
+    {% else %}
+      {% if menu_level == 1 and loop.parent.loop.index == 2 %}
+        <ul class="dropdown-menu" area-labelledby="navbarDropdownMenuLink">
+      {% else %}
+      <ul>
+      {% endif %}
+    {% endif %}
+    {% for item in items %}
+      {# Add the 'active' class if the item is in the active trail #}
+      <li{{ item.attributes.addClass(menu_level == 0 and loop.index == 2 ? 'nav-item dropdown' : 'nav-item', item.in_active_trail ? 'active' : '') }}>
+        {% if menu_level == 0 and loop.index == 2 %}
+          {{ link(item.title, item.url, {
+            class: 'nav-link dropdown-toggle' ~ (item.in_active_trail ? ' active' : ''),
+            id: 'navbarDropdownMenuLink',
+            role: 'button',
+            'data-bs-toggle': 'dropdown',
+            'area-expanded': 'false'
+          }) }}
+        {% else %}
+        {{ link(item.title, item.url, {class: 'nav-link' ~ (item.in_active_trail ? ' active' : '')}) }}
         {% endif %}
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
